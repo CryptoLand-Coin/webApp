@@ -1,0 +1,28 @@
+# ----- Coin Info cryptoland.com -----
+
+NETWORK_PASSPHRASE="Public Global Stellar Network ; September 2015"
+
+ACCOUNTS=[  ]
+
+[DOCUMENTATION]
+ORG_NAME="CryptoLand"
+ORG_DBA="Crypto Movez LLC"
+ORG_URL="cryptoland.com"
+ORG_LOGO="https://vibelandlimited.com/assets/Cryptoland-Logo-White-Small-With-Background.png"
+ORG_DESCRIPTION="CryptoLand"
+ORG_OFFICIAL_EMAIL="corey@cryptocorey.com"
+
+[[PRINCIPALS]]
+name="Corey Chadwick"
+email="corey@cryptocorey.com"
+github="teamonepercent"
+
+[[CURRENCIES]]
+code="CRYPTO"
+issuer=""
+display_decimals=2
+anchor_asset_type="crypto"
+anchor_asset="XLM"
+name="CRYPTOLAND"
+desc="CryptoLand"
+image="https://vibelandlimited.com/assets/Cryptoland-Logo-White-Small-With-Background.png"
