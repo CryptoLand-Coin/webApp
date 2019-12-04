@@ -1,4 +1,0 @@
-[build]
-base = "cryptoland/"
-publish = "cryptoland/build/"
-command = "npm run-script build"
