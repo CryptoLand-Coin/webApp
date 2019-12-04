@@ -2,14 +2,14 @@
 
 NETWORK_PASSPHRASE="Public Global Stellar Network ; September 2015"
 
-ACCOUNTS=[  ]
+ACCOUNTS=["GBNTDFZ6AAEK6DS2ID5STINF7Q7JLRESZRWYTMREEU3JY67PS6SE6L4G","GDUPVSCFLPYWMQ3B3U6XNEBA3HRRZ7XJBDO2YUCWVXIGN72KME2OR2YY"]
 
 [DOCUMENTATION]
-ORG_NAME="CryptoLand"
+ORG_NAME="Cryptoland"
 ORG_DBA="Crypto Movez LLC"
 ORG_URL="cryptoland.com"
-ORG_LOGO="https://vibelandlimited.com/assets/Cryptoland-Logo-White-Small-With-Background.png"
-ORG_DESCRIPTION="CryptoLand"
+ORG_LOGO="https://cryptoland.netlify.com/assets/Cryptoland_Logo_White_Small_Background.png"
+ORG_DESCRIPTION="Cryptoland"
 ORG_OFFICIAL_EMAIL="corey@cryptocorey.com"
 
 [[PRINCIPALS]]
@@ -19,10 +19,10 @@ github="teamonepercent"
 
 [[CURRENCIES]]
 code="CRYPTO"
-issuer=""
+issuer="GBNTDFZ6AAEK6DS2ID5STINF7Q7JLRESZRWYTMREEU3JY67PS6SE6L4G"
 display_decimals=2
 anchor_asset_type="crypto"
 anchor_asset="XLM"
 name="CRYPTOLAND"
-desc="CryptoLand"
-image="https://vibelandlimited.com/assets/Cryptoland-Logo-White-Small-With-Background.png"
+desc="Cryptoland"
+image="https://cryptoland.netlify.com/assets/Cryptoland_Logo_White_Small_Background.png"
