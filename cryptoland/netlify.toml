@@ -1,0 +1,4 @@
+[build]
+base = "crypto-movez/"
+publish = "crypto-movez/build/"
+command = "npm run-script build"
