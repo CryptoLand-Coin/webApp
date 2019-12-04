@@ -32,6 +32,16 @@ import {
     EmailSubscriberContainer
 } from './EmailSubscriber'
 
+import {
+    ContactContainer
+} from './Contact'
+
+import {
+    FaqContainer,
+    FaqQATextContainer,
+    FaqQAContainer
+} from './Faqs'
+
 export {
     AppContainer,
     NavigationContainer,
@@ -42,5 +52,9 @@ export {
     Button,
     AccordianSectionContainer,
     AcordianBarContainer,
-    EmailSubscriberContainer
+    EmailSubscriberContainer,
+    ContactContainer,
+    FaqContainer,
+    FaqQATextContainer,
+    FaqQAContainer
 }

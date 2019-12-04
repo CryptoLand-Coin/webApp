@@ -5,10 +5,10 @@ function Footer() {
     return(
         <FooterContainer>
             <div>
-                <a>Contact Us</a>
-                <a>FAQ's</a>
-                <a>Privacy Policy</a>
-                <a>Terms & Conditions</a>
+                <a href='/contactus' >Contact Us</a>
+                <a href='/faqs' >FAQ's</a>
+                <a href='/privacypolicy' >Privacy Policy</a>
+                <a href='/termsandconditions' >Terms & Conditions</a>
             </div>
             
             <p>All rights reserverd. Copyright © Cryptoland 2020</p>

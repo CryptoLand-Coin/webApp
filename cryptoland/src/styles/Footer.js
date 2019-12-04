@@ -30,6 +30,10 @@ export const FooterContainer = styled.div`
     }
 
     a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+
         @media (max-width: 500px) {
             font-size: 0.8em
         }

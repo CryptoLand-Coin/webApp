@@ -20,17 +20,26 @@ export default class extends React.Component {
             isShowing={this.state.isShowing}
           />
           {this.state.isShowing && (
-            <div style={{
-                height: '30vh',
-                width: '100%',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                color: 'white',
-                fontSize: '2em'
-            }}>
-                <h1>CONTENT COMING SOON</h1>
+            <div
+            style={{
+              marginTop: '100px',
+              width: '100%',
+              height: '85vh',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              background: 'black',
+              color: 'white',
+              flexDirection: 'column',
+              paddingBottom: '5%'
+            }}
+          >
+            <div style={{ padding: '20px' }}>
+              <div style={{ height: '100vh'}}>
+                  <iframe src="https://drive.google.com/file/d/18b1kyiku0oeAbaBGVlIGL0Ie-Y42Xs5S/preview" width={window.innerWidth} height="100%"></iframe>
+              </div>
             </div>
+          </div>
           )}
         </AccordianSectionContainer>
       );
