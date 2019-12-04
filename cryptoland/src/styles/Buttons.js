@@ -7,6 +7,7 @@ export const BuyCryptoButton = styled.div`
     padding: 1% 0;
     text-align: center;
     border-radius: 5px;
+    cursor: pointer;
 
     @media (max-width: 1200px) {
       width: 25%;
