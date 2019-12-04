@@ -8,11 +8,34 @@ export const BuyCryptoButton = styled.div`
     text-align: center;
     border-radius: 5px;
 
+    @media (max-width: 1200px) {
+      width: 25%;
+      margin-top: 10%;
+      padding: 2%;
+    }    
+
+    @media (max-width: 750px) {
+      width: 40%;
+      margin-top: 10%;
+      padding: 4%;
+    } 
+
+    @media (max-width: 470px) {
+      padding: 3%;
+      font-size: 0.8em;
+    }
+
+    @media (max-width: 470px) {
+      width: 60%;
+    }
+
     p {
         color: white;
         font-size: 1.7em;
         font-weight: 700;
     }
+
+
 `
 
 export const Button = styled.button`
