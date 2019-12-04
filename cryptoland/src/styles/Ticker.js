@@ -8,6 +8,14 @@ export const TickerContainer = styled.div`
     font-size: 1.1em;
     align-items: center;
 
+    @media (max-width: 400px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 360px) {
+        font-size: 1em;
+    }
+
     p:first-child {
         margin-right: 2%;
     }

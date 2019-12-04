@@ -33,10 +33,19 @@ export const AcordianBarContainer = styled.div`
      width: 70%;
    }
 
+   @media (max-width: 1200px) {
+    width: 50%;
+  }
+
    @media (max-width: 960px) {
-     width: 100%;
+     width: 50%;
      padding-right: 50px;
    }
+
+   @media (max-width: 550px) {
+    width: 75%;
+    padding-right: 50px;
+  }
 
    p {
     color: #01A76E;
@@ -45,20 +54,12 @@ export const AcordianBarContainer = styled.div`
      padding-left: 5%;
      width: 100%;
 
-     @media (max-width: 960px) {
-       font-size: 1.6rem
-     }
-
-     @media (max-width: 600px) {
-       font-size: 1.3rem
-     }
-
      @media (max-width: 500px) {
-       font-size: 1rem
+       font-size: 1.5rem
      }
 
      @media (max-width: 350px) {
-       font-size: .8rem
+       font-size: 1.3rem
      }
    }
  }

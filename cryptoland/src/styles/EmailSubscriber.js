@@ -17,6 +17,10 @@ export const EmailSubscriberContainer = styled.div`
         font-size: 2rem;
         font-weight: 700;
         margin-bottom: 0.3%;
+
+        @media (max-width: 400px) {
+          font-size: 1.5em;
+        }
     }
 
     p {
@@ -27,6 +31,10 @@ export const EmailSubscriberContainer = styled.div`
         @media (max-width: 960px) {
           font-size: 1.2rem;
           margin-bottom: 20px;
+        }
+
+        @media (max-width: 400px) {
+          font-size: 1em;
         }
     }
 
@@ -40,8 +48,15 @@ export const EmailSubscriberContainer = styled.div`
         align-content: center;
         width: 100%;
 
-        @media (max-width: 600px) {
+        @media (max-width: 960px) {
           flex-direction: column;
+          align-items: center;
+        }
+
+        button {
+          @media (max-width: 960px) {
+            margin-top: 5%;
+          }
         }
 
         input {
