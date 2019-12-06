@@ -7,8 +7,8 @@ ACCOUNTS=["GBNTDFZ6AAEK6DS2ID5STINF7Q7JLRESZRWYTMREEU3JY67PS6SE6L4G","GDUPVSCFLP
 [DOCUMENTATION]
 ORG_NAME="Cryptoland"
 ORG_DBA="Crypto Movez LLC"
-ORG_URL="cryptoland.com"
-ORG_LOGO="https://cryptoland.netlify.com/assets/Cryptoland_Logo_White_Small_Background.png"
+ORG_URL="cryptolandico.com"
+ORG_LOGO="https://cryptolandassets.s3.us-east-2.amazonaws.com/Cryptoland_LOGO.png"
 ORG_DESCRIPTION="Cryptoland"
 ORG_OFFICIAL_EMAIL="corey@cryptocorey.com"
 
@@ -25,4 +25,4 @@ anchor_asset_type="crypto"
 anchor_asset="XLM"
 name="CRYPTOLAND"
 desc="Cryptoland"
-image="https://cryptoland.netlify.com/assets/Cryptoland_Logo_White_Small_Background.png"
+image="https://cryptolandassets.s3.us-east-2.amazonaws.com/Cryptoland_LOGO.png"
