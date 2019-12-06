@@ -8,7 +8,7 @@ export const TickerContainer = styled.div`
     font-size: 1.1em;
     align-items: center;
 
-    @media (max-width: 400px) {
+    @media (max-width: 600px) {
         flex-direction: column;
     }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { AccordianSectionContainer } from '../styles'
+import { AccordianSectionContainer, AccordianTextContainer } from '../styles'
 import AcordianMenu from './Accordian/AccordianMenu'
 
 export default class extends React.Component {
@@ -20,35 +20,20 @@ export default class extends React.Component {
             isShowing={this.state.isShowing}
           />
           {this.state.isShowing && (
-            <div style={{
-                height: 'auto',
-                width: '100%',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                color: 'white',
-                fontSize: '2em',
-                flexDirection: 'column'
+            <AccordianTextContainer style={{
+                
             }}>
-                <p style={{
-                  width: '75%',
-                  marginTop: '3%'
-                }}>
-                Cryptoland revolutionizes the fundamental fabric of traditional community building through the utilization of blockchain technology and the development of decentralized applications.</p>
- 
-                <p style={{
-                  width: '75%',
-                  marginTop: '3%'
-                }}>Cryptoland empowers creators, innovators, and entrepreneurs with an educational community where valuable resources and networks are shared.</p>
 
-                <p style={{
-                  width: '75%',
-                  marginTop: '3%',
-                  marginBottom: '5%'
-                }}>  
-                Cryptoland provides community members a platform where users are rewarded for sharing their experiences, knowledge, creations, opinions, and wisdom.
+              <p>
+                Providing artists, entreprenuers, and businesss a network that goes beyond the traditional framework of shaking hands and learning names. CRYPTOLAND is a network designed not only to empower brands and individuals, but provide a tangible vessel to create, sustain, and grow long-term financial investment and security. </p>
+
+                <p>
+                CRYPTOLAND's native application creates a global, synergistic environment for users to conduct business and fortify earnings. Harnessing the known power of traditional networking, our platform transcends beyond the benefits involved with the forming new connections, and provides community members real, monetary incentives for their engagement and outreach efforts. </p>
+
+                <p>  
+                A smarter network for a smarter generation of business, CRYPTOLAND works as diligently as its users to promote brands and grow wealth by providing both an application and currency that yield multi-faceted benefits from tasks already being performed by the innovators we aim to partner with.
                 </p>
-            </div>
+            </AccordianTextContainer>
           )}
         </AccordianSectionContainer>
       );

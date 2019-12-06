@@ -1,5 +1,5 @@
 import React from 'react'
-import { AccordianSectionContainer } from '../styles'
+import { AccordianSectionContainer, RoadMapContainer } from '../styles'
 import AcordianMenu from './Accordian/AccordianMenu'
 
 export default class extends React.Component {
@@ -20,41 +20,54 @@ export default class extends React.Component {
             isShowing={this.state.isShowing}
           />
           {this.state.isShowing && (
-            <div style={{
-                height: 'auto',
-                width: '100%',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                color: 'white',
-                fontSize: '2em',
-                flexDirection: 'column'
-            }}>
+            <RoadMapContainer>
 
-              <h3>— 2020 —</h3>
-              
+              <div>
+                <div>
+                  <ul>Public Offering Date</ul>
+                  <ul>Minimum Coin Valuation</ul>
+                </div>
 
-              <div style={{
-                marginTop: '2.5%',
-                width: '75%',
-                textAlign: 'left'
-              }}>
-                <ul>January 1: Development of Cryptoland Blockchain Protocol Begins</ul>
+                <div>
+                  <ul>December 1, 2019</ul>
+                  <ul>$0.35</ul>
+                </div>
                 
   
-                <ul style={{
-                  marginTop: '2.5%',
-                }}>May 30: Cryptoland Foundation Summer Mini-Golf Tournament - San Diego, CA</ul>
+                <div>
+                  <ul>January 1, 2020</ul>
+                  <ul>$0.45</ul>
+                </div>
+
+                <div>
+                  <ul>February 1, 202</ul>
+                  <ul>$0.55</ul>
+                </div>
+
+                <div>
+                  <ul>March 1, 2020</ul>
+                  <ul>$0.65</ul>
+                </div>
                 
-                <ul style={{
-                  marginTop: '2.5%',
-                }}>Summer 2020: 1st Annual CryptolandIA Music Festival</ul>
-  
-                <ul style={{
-                  marginTop: '2.5%',
-                }}>Fall 2020: Cryptoland Media Expansion Project (Phase 2 of 3)</ul>
+                <h3>Additional Project Milestones</h3> 
+
+                <div>
+                  <ul>Global Exchange Listing</ul>
+                  <ul>May 2020</ul>
+                </div>
+
+                <div>
+                  <ul>CRYPTOLAND Vault Application Completion</ul>
+                  <ul>March 2020</ul>
+                </div>
+
+                <div>
+                  <ul>CRYPTOLAND Mobile Application Completion</ul>
+                  <ul>June 2020</ul>
+                </div>
+                
               </div>
-            </div>
+            </RoadMapContainer>
           )}
         </AccordianSectionContainer>
       );

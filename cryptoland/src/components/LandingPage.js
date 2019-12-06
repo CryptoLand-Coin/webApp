@@ -5,6 +5,9 @@ import AboutCrypto from './AboutCrypto'
 import WhitePaper from './WhitePaper'
 import RoadMap from './RoadMap'
 import EmailSubscriber from './EmailSubscriber'
+import UtilityToken from './UtilityToken'
+import TransactionSpeed from './TransactionSpeed'
+import CryptolandApplication from './CryptolandApplication'
 
 function LandingPage(props) {
     return(
@@ -24,6 +27,9 @@ function LandingPage(props) {
             <AboutCrypto />
             <WhitePaper />
             <RoadMap />
+            <UtilityToken />
+            <TransactionSpeed />
+            <CryptolandApplication />
             <EmailSubscriber push={props.history.push} />
         </>
     )

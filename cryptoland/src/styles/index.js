@@ -42,6 +42,14 @@ import {
     FaqQAContainer
 } from './Faqs'
 
+import { 
+    RoadMapContainer
+} from './RoadMap' 
+
+import {
+    AccordianTextContainer
+} from './AccordianText'
+
 export {
     AppContainer,
     NavigationContainer,
@@ -56,5 +64,7 @@ export {
     ContactContainer,
     FaqContainer,
     FaqQATextContainer,
-    FaqQAContainer
+    FaqQAContainer,
+    RoadMapContainer,
+    AccordianTextContainer
 }
