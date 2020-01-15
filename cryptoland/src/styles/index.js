@@ -11,7 +11,7 @@ import {
 } from './Ticker'
 
 import {
-    LandingPageHero
+    LandingPageHero, HeroDescriptionContainer, CryptoProgressContainer
 } from './LandingPage'
 
 import {
@@ -54,6 +54,7 @@ export {
     NavigationContainer,
     TickerContainer,
     LandingPageHero,
+    HeroDescriptionContainer, CryptoProgressContainer,
     FooterContainer,
     ButtonContainer,
     AccordianSectionContainer,

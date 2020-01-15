@@ -12,7 +12,7 @@ function Navigation(props) {
                 cursor: 'pointer'
             }}
             onClick={()=>props.history.push('/')} 
-            src='assets/Cryptoland_Logo_White.png' />
+            src='assets/Cryptoland_Logo_Green_Icon.png' />
 
             <div>
                 <HashButton text="HOW IT WORKS" accordianId="#howitworks" />
@@ -23,7 +23,7 @@ function Navigation(props) {
                 <HashButton 
                 text="TEAM" accordianId="#team" />
                 <Button 
-                backgroundColor="#55E2BE"
+                background="linear-gradient(to right, #6BDFC7 0%, #00EB9A 100%);}"
                 width='11%'
                 padding='1.25%'
                 textColor="white"

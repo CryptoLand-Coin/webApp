@@ -7,7 +7,7 @@ export const ButtonContainer = styled.button`
   padding: ${props => props.padding};
   color: ${props => props.textColor};
   background-color: ${props => props.backgroundColor};
-  background: ${props => props.noBackground && "none"};
+  background: ${props => props.noBackground ? "none" : props.background};
   border: none;
   border-radius: 3px;
   font-size: ${props => props.fontSize};
@@ -22,6 +22,12 @@ export const ButtonContainer = styled.button`
     color: ${props => props.textColor};
     font-size: ${props => props.fontSize};
     font-weight: ${props => props.fontWeight};
+
+    p {
+      margin: 0;
+      font-size: ${props => props.fontSize};
+      font-weight: ${props => props.fontWeight};
+    }
   }
 
   :hover {

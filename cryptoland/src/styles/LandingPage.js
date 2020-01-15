@@ -1,90 +1,86 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const LandingPageHero = styled.div`
-    background: linear-gradient(rgba(0,0,0,0.15),rgba(85,226,190,0.65) ),url(/assets/Background_Image.jpg);
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: url(/assets/Background_Image.png);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+`;
+
+export const HeroDescriptionContainer = styled.div`
+  width: 49.5%;
+  margin-top: 15vh;
+  height: 70vh;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .interiorContainer {
+    width: 72%;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    
-    img {
-        width: 15%;
-        margin-top: 10%;
+    height: 86%;
+    margin-top: 7%;
+  }
 
-        @media (max-width: 1200px) {
-            width: 35%;
-            margin-top: 25%;
-        }    
+  h1 {
+    font-size: 2.6em;
+    font-weight: 700;
+    line-height: 1.1em;
+  }
 
-        @media (max-width: 650px) {
-            width: 50%;
-            margin-top: 40%;
-        }  
+  p {
+    font-size: 1em;
+    margin-top: 0.6em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+  }
+
+  strong {
+    font-size: 1em;
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+  }
+
+  ul {
+    margin-top: 7%;
+    font-size: 1.1em;
+
+    div {
+      margin-bottom: 3.3%;
+      display: flex;
+      align-items: center;
     }
 
-    h1 {
-        margin-top: .5%;
-        font-size: 4.3em;
-        font-weight: 700;
-
-        @media (max-width: 1200px) {
-            font-size: 3.3em;
-        }
-
-        @media (max-width: 900px) {
-            font-size: 2.8em;
-        }
-
-        @media (max-width: 750px) {
-            font-size: 2.4em;
-        }
-
-        @media (max-width: 650px) {
-            font-size: 2em;
-            margin-top: 5%;
-        }  
-
-        @media (max-width: 550px) {
-            font-size: 1.7em;
-            margin-top: 5%;
-        }  
-
-        @media (max-width: 470px) {
-            font-size: 1.3em;
-            margin-top: 5%;
-        }
-
-        @media (max-width: 350px) {
-            font-size: 1em;
-            margin-top: 5%;
-        }
+    li {
+      padding-left: 2%;
     }
 
-    p {
-        margin-top: 1.5%;
-        font-size: 1.6em;
-        color: #01A76E;
-
-        @media (max-width: 750px) {
-            font-size: 1.5em;
-        }
-
-        @media (max-width: 650px) {
-            font-size: 1.2em;
-            margin-top: 4%;
-        } 
-
-        @media (max-width: 470px) {
-            font-size: 0.8em;
-            margin-top: 4%;
-        }
-
-        @media (max-width: 350px) {
-            font-size: 0.7em;
-            margin-top: 4%;
-        }
+    i {
+      font-size: 1.7em;
+      color: #55e2be;
+      background: linear-gradient(to right, #6bdfc7 0%, #00eb9a 100%);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
     }
-`
+    div {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+`;
+
+export const CryptoProgressContainer = styled.div`
+  width: 49.5%;
+  margin-top: 15vh;
+  height: 70vh;
+  border: 1px solid red;
+`;

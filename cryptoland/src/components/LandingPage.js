@@ -8,20 +8,16 @@ import EmailSubscriber from './EmailSubscriber'
 import UtilityToken from './UtilityToken'
 import TransactionSpeed from './TransactionSpeed'
 import CryptolandApplication from './CryptolandApplication'
+import HeroDescription from './HeroDescription'
+import CryptoProgress from './CryptoProgress'
 
 function LandingPage(props) {
     return(
         <>
             <LandingPageHero>
     
-                <img src='/assets/CryptoLand_Logo_White.png' />
-    
-                <h1>The Cryptocurrency you can spend</h1>
-                <p>A new pure digital currency that you can use.</p>
-    
-                <ButtonContainer>
-                    <p>BUY CRYPTO</p>
-                </ButtonContainer>
+                <HeroDescription />
+                <CryptoProgress />
                 
             </LandingPageHero>
             <AboutCrypto />

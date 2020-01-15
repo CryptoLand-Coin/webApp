@@ -9,7 +9,7 @@ function HashButton(props) {
         noDecoration
         noBackground
         textColor={`${props.location.hash === props.accordianId ? '#55E2BE' : "white"}`}
-        fontSize=".9em"
+        fontSize="0.925em"
         fontWeight="900"
         letterSpacing="1.5px"
        >
