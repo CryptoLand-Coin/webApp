@@ -15,6 +15,7 @@ export const ButtonContainer = styled.button`
   cursor: pointer;
   transition: all .3s ease;
   outline: none;
+  letter-spacing: ${props => props.letterSpacing}
 
   a {
     text-decoration: ${props => props.noDecoration && "none"};

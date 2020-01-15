@@ -4,8 +4,10 @@ import { TickerContainer } from '../styles'
 function Ticker() {
     return(
         <TickerContainer>
-                <p>Cryptoland (CRYPTO) $0.50 usd</p>
-                <i class="fas fa-sort-up fa-2x" /><p>+$0.25 (50.0%)</p>
+            <h1>CURRENT MARKET VALUE:</h1>
+                <p>Cryptoland (CRYPTO) </p>
+                <h1>$84.60 usd</h1>
+                <i class="fas fa-sort-up " /><p>$73.60 (+769%)</p>
         </TickerContainer>
     )
 }

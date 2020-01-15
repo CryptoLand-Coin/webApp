@@ -14,14 +14,24 @@ function Navigation(props) {
             onClick={()=>props.history.push('/')} 
             src='assets/Cryptoland_Logo_White.png' />
 
-            <HashButton selectedColor="green" text="HOW IT WORKS" accordianId="#howitworks" />
-            <HashButton selectedColor="green"
-            text="WHITE PAPER" accordianId="#whitepaper" />
-            <HashButton selectedColor="green"
-            text="ROADMAP" accordianId="#roadmap" />
-            <HashButton selectedColor="green"
-            text="TEAM" accordianId="#team" />
-            <Button text="Log In" />
+            <div>
+                <HashButton text="HOW IT WORKS" accordianId="#howitworks" />
+                <HashButton 
+                text="WHITE PAPER" accordianId="#whitepaper" />
+                <HashButton 
+                text="ROADMAP" accordianId="#roadmap" />
+                <HashButton 
+                text="TEAM" accordianId="#team" />
+                <Button 
+                backgroundColor="#55E2BE"
+                width='11%'
+                padding='1.25%'
+                textColor="white"
+                fontSize=".9em"
+                fontWeight="900"
+                letterSpacing="1.5px"
+                text="LOGIN" />
+            </div>
         </NavigationContainer>
     )
 }

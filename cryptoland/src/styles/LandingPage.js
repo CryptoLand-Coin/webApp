@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const LandingPageHero = styled.div`
-    background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ),url('/assets/Background_Image.jpg');
-    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.15),rgba(85,226,190,0.65) ),url(/assets/Background_Image.jpg);
+    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;

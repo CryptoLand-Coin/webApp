@@ -3,7 +3,9 @@ import { ButtonContainer } from '../../styles'
 
 function Button(props) {
    return(
-       <ButtonContainer>
+       <ButtonContainer
+        {...props}
+       >
            <p>{props.text}</p>
        </ButtonContainer>
    )

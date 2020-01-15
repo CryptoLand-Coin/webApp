@@ -2,19 +2,22 @@ import styled from 'styled-components'
 
 export const NavigationContainer = styled.div`
     width: 100%;
-    height: 9vh;
+    height: 11vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 
     img {
-        height: 60%;
+        width: 11%;
+        height: auto;
         margin-left: 4%;
     }
 
-    h1 {
-        margin-right: 3%;
-        font-size: 1.35em;
-        font-weight: 600;
+    div {
+        width: 48.5%;
+        justify-content: space-between;
+        display: flex;
+        margin-right: 4%;
     }
 `

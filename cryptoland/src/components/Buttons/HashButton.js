@@ -8,7 +8,10 @@ function HashButton(props) {
        <ButtonContainer
         noDecoration
         noBackground
-        textColor={`${props.location.hash === props.accordianId ? props.selectedColor : "white"}`}
+        textColor={`${props.location.hash === props.accordianId ? '#55E2BE' : "white"}`}
+        fontSize=".9em"
+        fontWeight="900"
+        letterSpacing="1.5px"
        >
            <Link 
             to={'/' + props.accordianId}
