@@ -1,6 +1,6 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
-import { LandingPageHero, BuyCryptoButton } from '../styles'
+import { LandingPageHero, ButtonContainer } from '../styles'
 import AboutCrypto from './AboutCrypto'
 import WhitePaper from './WhitePaper'
 import RoadMap from './RoadMap'
@@ -19,9 +19,9 @@ function LandingPage(props) {
                 <h1>The Cryptocurrency you can spend</h1>
                 <p>A new pure digital currency that you can use.</p>
     
-                <BuyCryptoButton>
+                <ButtonContainer>
                     <p>BUY CRYPTO</p>
-                </BuyCryptoButton>
+                </ButtonContainer>
                 
             </LandingPageHero>
             <AboutCrypto />

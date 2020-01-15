@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-import { Button, EmailSubscriberContainer } from '../styles';
+import { ButtonContainer, EmailSubscriberContainer } from '../styles';
 
 export default class extends React.Component {
   state = {
@@ -91,7 +91,7 @@ export default class extends React.Component {
               value={this.state.subscriberEmail}
               onChange={this.changeHandler}
             />
-            <Button
+            <ButtonContainer
               type='submit'
               width={'300px'}
               height={'80px'}
@@ -107,7 +107,7 @@ export default class extends React.Component {
               m600fontSize={'1.3rem'}
             >
               SUBSCRIBE
-            </Button>
+            </ButtonContainer>
           </form>
         </div>
         {this.state.successMessage ? (

@@ -19,8 +19,7 @@ import {
 } from './Footer'
 
 import {
-    BuyCryptoButton,
-    Button
+    ButtonContainer
 } from './Buttons'
 
 import {
@@ -56,8 +55,7 @@ export {
     TickerContainer,
     LandingPageHero,
     FooterContainer,
-    BuyCryptoButton,
-    Button,
+    ButtonContainer,
     AccordianSectionContainer,
     AcordianBarContainer,
     EmailSubscriberContainer,
