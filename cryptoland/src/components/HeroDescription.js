@@ -6,25 +6,24 @@ function HeroDescription() {
   return (
     <HeroDescriptionContainer>
       <div className="interiorContainer">
-          <h1>The Cryptocurrency we have all been waiting for</h1>
+          <h1>Smarter, faster, intuitive cryptocurrency 
+designed for every-day use. </h1>
           <p>
-            A completely decentralized world-wide network <br/> 
-            where you own your data,
-            content & engagament.
+          A thriving decentralized global currency coupled with a revolutionary social platform. In CryptoLand, members interact with content they love.
           </p>
-          <strong>Then get paid for it</strong>
+          <strong>Then they get paid for it.</strong>
           <ul>
             <div>
               <i class="far fa-check-circle" />
-              <li>Invest in a transactionable currency for everyone</li>
+              <li>Invest in a cryptocurrency that has real utility </li>
             </div>
             <div>
               <i class="far fa-check-circle" />
-              <li>The first worldwide decentralized social network</li>
+              <li>Explore the world’s first crypto-backed social media network</li>
             </div>
             <div>
               <i class="far fa-check-circle" />
-              <li>Contributors own their data</li>
+              <li>Capitalize on your data, while solidifying your financial future</li>
             </div>
           </ul>
           <WPHashButton accordianId="#whitepaper" text="WHITE PAPER"

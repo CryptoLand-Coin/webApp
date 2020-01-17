@@ -13,10 +13,10 @@ export default class extends React.Component {
   
     render() {
       return (
-        <AccordianSectionContainer>
+        <AccordianSectionContainer id="howitworks">
           <AcordianMenu
             clickHandler={this.clickHandler}
-            text={'About CRYPTO'}
+            text={'HOW IT WORKS'}
             isShowing={this.state.isShowing}
           />
           {this.state.isShowing && (

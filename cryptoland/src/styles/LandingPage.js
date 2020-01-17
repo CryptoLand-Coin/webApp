@@ -14,9 +14,8 @@ export const LandingPageHero = styled.div`
 
 export const HeroDescriptionContainer = styled.div`
   width: 49.5%;
-  margin-top: 15vh;
+  // margin-top: 15vh;
   height: 70vh;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +29,7 @@ export const HeroDescriptionContainer = styled.div`
   }
 
   h1 {
-    font-size: 2.6em;
+    font-size: 2em;
     font-weight: 700;
     line-height: 1.1em;
   }
@@ -82,5 +81,62 @@ export const CryptoProgressContainer = styled.div`
   width: 49.5%;
   margin-top: 15vh;
   height: 70vh;
-  border: 1px solid red;
+  padding: 1%;
+
+  .interiorContainer {
+    background: rgb(0, 0, 0, 0.6);
+    width: 94%;
+    margin-top: 2%;
+    border-radius: 5px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .purchaseHeader {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 92%;
+    top: 5vh;
+    height: 8vh;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 0.75em;
+    font-weight: 800;
+    padding: 0 5%;
+    
+   p {
+      width: 29%;
+    }
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        padding-left: 10%;
+      }
+
+      img {
+        width: 25%;
+        height: auto;
+      }
+     
+    }
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
 `;
+
+

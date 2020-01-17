@@ -1,5 +1,5 @@
 import Navigation from './Navigation'
-import Ticker from './Ticker'
+import Tick from './Ticker'
 import LandingPage from './LandingPage'
 import NoMatch from './NoMatch'
 import Footer from './Footer'
@@ -10,7 +10,7 @@ import ContactUs from './ContactUs'
 
 export { 
     Navigation,
-    Ticker,
+    Tick,
     LandingPage,
     NoMatch,
     Footer,

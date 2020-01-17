@@ -82,7 +82,7 @@ export default class extends React.Component {
         <h1>Stay Informed</h1>
         <p>Subscribe to our newsletter and we will periodically send you updates and info about Cryptoland</p>
         <div>
-          <form onSubmit={this.submitHandler}>
+          <form action="https://script.google.com/macros/s/AKfycbw21W9Eg2IYObMXQUlXtxJygyo4Rz-dJaXNj13TeoDNEUpyOiY/exec" method="post">
             <input
               name='subscriberEmail'
               type='email'

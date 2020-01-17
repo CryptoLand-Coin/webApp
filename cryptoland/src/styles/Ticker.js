@@ -11,6 +11,7 @@ export const TickerContainer = styled.div`
     position: fixed;
     padding: 0.7% 0;
     box-shadow: 0px 0px 29px 0px rgba(63,235,154,.25);
+    z-index: 99;
 
     h1 {
         font-weight: 900;

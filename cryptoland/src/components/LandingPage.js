@@ -1,6 +1,6 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
-import { LandingPageHero, ButtonContainer } from '../styles'
+import { LandingPageHero } from '../styles'
 import AboutCrypto from './AboutCrypto'
 import WhitePaper from './WhitePaper'
 import RoadMap from './RoadMap'

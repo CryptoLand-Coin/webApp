@@ -13,7 +13,7 @@ export default class extends React.Component {
   
     render() {
       return (
-        <AccordianSectionContainer>
+        <AccordianSectionContainer id="whitepaper">
           <AcordianMenu
             clickHandler={this.clickHandler}
             text={'White Paper'}
@@ -36,7 +36,7 @@ export default class extends React.Component {
           >
             <div style={{ padding: '20px' }}>
               <div style={{ height: '85vh'}}>
-                  <iframe src="https://drive.google.com/file/d/19MchcC8V5QxZPesO6JiWazSBUwzNk_Ih/preview" width={window.innerWidth} height="100%"></iframe>
+                  <iframe src="https://drive.google.com/file/d/1_UqRwB0PVAWJkezx754D3MI77MBpSLt4/preview" width={window.innerWidth} height="100%"></iframe>
               </div>
             </div>
           </div>

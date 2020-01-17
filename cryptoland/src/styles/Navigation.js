@@ -7,6 +7,9 @@ export const NavigationContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 99;
+    background: rgba(0,0,0,0.75);
+
 
     img {
         width: 11%;
