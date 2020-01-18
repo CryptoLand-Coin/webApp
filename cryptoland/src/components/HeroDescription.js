@@ -6,8 +6,8 @@ function HeroDescription() {
   return (
     <HeroDescriptionContainer>
       <div className="interiorContainer">
-          <h1>Smarter, faster, intuitive cryptocurrency 
-designed for every-day use. </h1>
+          <h1>Smarter, faster, intuitive cryptocurrency
+            designed for every-day use. </h1>
           <p>
           A thriving decentralized global currency coupled with a revolutionary social platform. In CryptoLand, members interact with content they love.
           </p>

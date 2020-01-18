@@ -15,10 +15,10 @@ function LandingPage(props) {
     return(
         <>
             <LandingPageHero id='hero'>
-
+              <div className='hero-container'>
                 <HeroDescription />
                 <CryptoProgress />
-
+              </div>
             </LandingPageHero>
             <AboutCrypto />
             <WhitePaper />

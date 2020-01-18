@@ -13,7 +13,7 @@ export const NavigationContainer = styled.div`
 
 
     img {
-        width: 11%;
+        width: 15%;
         height: auto;
         margin-left: 4%;
     }

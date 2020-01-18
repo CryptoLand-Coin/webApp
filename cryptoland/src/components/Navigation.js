@@ -170,7 +170,6 @@ class Navigation extends Component {
                 <Button
                 onClick={() => window.open("https://cryptoland.icoadm.in/")}
                 background="linear-gradient(to right, #6BDFC7 0%, #00EB9A 100%);}"
-                width='11%'
                 padding='1.25%'
                 textColor="white"
                 fontSize=".9em"
