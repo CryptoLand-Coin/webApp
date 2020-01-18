@@ -1,47 +1,79 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+// --------------------------------------------------------
+// Keyframes for ticker anitmation
+const ticker = keyframes`
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+`
 
 export const TickerContainer = styled.div`
     width: 100%;
     display: flex;
-    justify-content: center;
-    background: rgb(0, 0, 0, 0.6);
+    /* justify-content: center; */
+    background-color: ${props => props.isInHero ? '#020202 ': '#efefef'};
     font-size: .8em;
     align-items: center;
-    margin-top: 11vh;
+    margin-top: ${props => props.width > 960 ? '100px' : '75px'};
     position: fixed;
     padding: 0.7% 0;
-    box-shadow: 0px 0px 29px 0px rgba(63,235,154,.25);
-    z-index: 99;
+    /* box-shadow: 0px 0px 29px 0px rgba(63,235,154,.25); */
+    z-index: 1;
+    transition: all .2s ease;
+    overflow: hidden;
 
-    h1 {
-        font-weight: 900;
-        margin-left: 1%;
-    }
+    .ticker-wrap {
+      width: 100%;
+      padding-left: 100%;
+      /* background-color: #eee; */
 
-    p {
-        margin-left: 0.25%;
-    }
+      .ticker-move {
+        display: inline-block;
+        white-space: nowrap;
+        padding-right: ${props => `${props.width}px`};
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name: ${ticker};
+        animation-duration: ${props => `${props.timing}s`};
 
-    i {
-        padding-left: 0.5%;
-        transform: translate(0px, 25%);
-        color: #01A76E;
-    }
+        &:hover {
+          animation-play-state: paused;
+        }
 
-    @media (max-width: 600px) {
-        flex-direction: column;
-    }
+        .ticker-item {
+          display: flex;
+          flex-direction: row;
 
-    @media (max-width: 360px) {
-        font-size: 1em;
-    }
+          h1 {
+              font-weight: 900;
+              margin-left: 1%;
+              color: ${props => props.isInHero ? '#efefef' : '#020202 '};
+          }
 
-    p:first-child {
-        margin-right: 2%;
-    }
+          p {
+              margin-left: 0.25%;
+              color: ${props => props.isInHero ? '#efefef' : '#020202 '};
+          }
 
-    p:last-child {
-        color: #01A76E;
-        font-weight: 700;
+          i {
+              padding-left: 0.5%;
+              transform: translate(0px, 25%);
+              color: #01A76E;
+          }
+
+          p:first-child {
+              margin-right: 2%;
+          }
+
+          p:last-child {
+              color: #01A76E;
+              font-weight: 700;
+          }
+        }
+      }
     }
 `

@@ -1,16 +1,65 @@
-import React, { useState, useEffect } from "react";
+import React, { Component } from "react";
+import { connect } from 'react-redux';
+
 import { TickerContainer } from "../styles";
 
-function Tick() {
-  return (
-    <TickerContainer>
-      <h1>CURRENT MARKET VALUE:</h1>
-      <p>Cryptoland (CRYPTO) </p>
-      <h1>$84.60 usd</h1>
-      <i class="fas fa-sort-up " />
-      <p>$73.60 (+769%)</p>
-    </TickerContainer>
-  );
+class Tick extends Component {
+  state = {
+    tickerInfoWidth: 0,
+    tickerTiming: 0
+  }
+
+  componentDidMount() {
+    this.findTickerInfoWidth()
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if(this.props.width !== prevProps.width) {
+      this.findTickerInfoWidth()
+    }
+  }
+
+  findTickerInfoWidth = () => {
+    const tickerInfoWidth = document.querySelector('#ticker-info').offsetWidth
+    console.log('ticker info: ', tickerInfoWidth)
+    const tickerTiming = (this.props.width + tickerInfoWidth)/50
+    console.log('ticker timing: ', tickerTiming)
+
+    this.setState({
+      tickerInfoWidth: tickerInfoWidth,
+      tickerTiming: tickerTiming
+    })
+  }
+
+  render() {
+
+    return (
+      <TickerContainer
+        id='ticker'
+        isInHero={this.props.isInHero}
+        width={this.props.width}
+        timing={this.state.tickerTiming}
+        tickerInfoWidth={this.state.tickerInfoWidth}
+      >
+        <div className='ticker-wrap'>
+          <div className='ticker-move'>
+            <div id='ticker-info' className='ticker-item'>
+              <h1>CURRENT MARKET VALUE:</h1>
+              <p>Cryptoland (CRYPTO) </p>
+              <h1>$84.60 usd</h1>
+              <i class="fas fa-sort-up " />
+              <p>$73.60 (+769%)</p>
+            </div>
+          </div>
+        </div>
+      </TickerContainer>
+    )
+  }
 }
 
-export default Tick;
+const mapStateToProps = state => ({
+  width: state.width,
+  isInHero: state.isInHero
+})
+
+export default connect(mapStateToProps, {})(Tick)

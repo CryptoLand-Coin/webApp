@@ -2,23 +2,34 @@ import styled from "styled-components";
 
 export const LandingPageHero = styled.div`
   background: url(/assets/Background_Image.png);
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  padding: 50px 0;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
 `;
 
 export const HeroDescriptionContainer = styled.div`
   width: 49.5%;
-  // margin-top: 15vh;
-  height: 70vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 960px) {
+    width: 100%;
+    order: 2;
+  }
 
   .interiorContainer {
     width: 72%;
@@ -80,8 +91,12 @@ export const HeroDescriptionContainer = styled.div`
 export const CryptoProgressContainer = styled.div`
   width: 49.5%;
   margin-top: 15vh;
-  height: 70vh;
+  height: 100%;
   padding: 1%;
+
+  @media (max-width: 960px) {
+    order: 1;
+  }
 
   .interiorContainer {
     background: rgb(0, 0, 0, 0.6);
@@ -109,7 +124,7 @@ export const CryptoProgressContainer = styled.div`
     font-size: 0.75em;
     font-weight: 800;
     padding: 0 5%;
-    
+
    p {
       width: 29%;
     }
@@ -127,7 +142,7 @@ export const CryptoProgressContainer = styled.div`
         width: 25%;
         height: auto;
       }
-     
+
     }
   }
 
@@ -138,5 +153,3 @@ export const CryptoProgressContainer = styled.div`
     font-weight: 600;
   }
 `;
-
-

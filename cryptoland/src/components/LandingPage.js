@@ -14,11 +14,11 @@ import CryptoProgress from './CryptoProgress'
 function LandingPage(props) {
     return(
         <>
-            <LandingPageHero>
-    
+            <LandingPageHero id='hero'>
+
                 <HeroDescription />
                 <CryptoProgress />
-                
+
             </LandingPageHero>
             <AboutCrypto />
             <WhitePaper />

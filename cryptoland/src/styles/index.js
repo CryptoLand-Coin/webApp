@@ -3,7 +3,12 @@ import {
 } from './AppContainer'
 
 import {
-    NavigationContainer
+    NavigationContainer,
+    // hamburger menu
+    HamburgerMenuContainer,
+    MenuContainer,
+    MenuItemContainer,
+    MenuButtonContainer
 } from './Navigation'
 
 import {
@@ -41,9 +46,9 @@ import {
     FaqQAContainer
 } from './Faqs'
 
-import { 
+import {
     RoadMapContainer
-} from './RoadMap' 
+} from './RoadMap'
 
 import {
     AccordianTextContainer
@@ -52,9 +57,17 @@ import {
 export {
     AppContainer,
     NavigationContainer,
+// --------------------------------------------
+    // hamburger menu
+    HamburgerMenuContainer,
+    MenuContainer,
+    MenuItemContainer,
+    MenuButtonContainer,
+// --------------------------------------------
     TickerContainer,
     LandingPageHero,
-    HeroDescriptionContainer, CryptoProgressContainer,
+    HeroDescriptionContainer,
+    CryptoProgressContainer,
     FooterContainer,
     ButtonContainer,
     AccordianSectionContainer,
