@@ -1,9 +1,16 @@
 import React, { Component } from 'react'
-import { AcordianBarContainer } from '../../styles'
+import { withRouter } from 'react-router-dom'
 
-export default class extends Component {
+import {
+  AccordianSectionContainer,
+  AccordianTextContainer,
+  AcordianBarContainer
+} from '../../styles'
+
+class AcordianMenu extends Component {
   state = {
-    chevronSize: ''
+    chevronSize: '',
+    isShowing: false
   }
 
   componentDidMount() {
@@ -17,14 +24,41 @@ export default class extends Component {
       })
     }
   }
+
+  clickHandler = () => {
+    this.setState({ isShowing: !this.state.isShowing });
+  };
+
   render() {
+    const hashLocation = this.props.history.location.hash
+    const lowerText = this.props.text.toLowerCase()
+    const splitTextArr = lowerText.split(' ')
+    const joinText = splitTextArr.join('')
+
     return(
-        <AcordianBarContainer onClick={this.props.clickHandler} color={this.props.color}>
+      <AccordianSectionContainer id={`${joinText}`}>
+
+        <AcordianBarContainer
+          onClick={this.clickHandler}
+          color={this.props.color}
+        >
             <div>
                 <p>{this.props.text}</p>
-                {this.props.isShowing ? <i className={`fas fa-chevron-up ${this.state.chevronSize}`} /> : <i className={`fas fa-chevron-down ${this.state.chevronSize}`} />}
+                {this.state.isShowing || hashLocation.includes(joinText) ? <i className={`fas fa-chevron-up ${this.state.chevronSize}`} /> : <i className={`fas fa-chevron-down ${this.state.chevronSize}`} />}
             </div>
         </AcordianBarContainer>
+
+        {this.state.isShowing || hashLocation.includes(joinText) ? (
+          <AccordianTextContainer>
+            {this.props.children}
+          </AccordianTextContainer>
+          ) : null
+        }
+
+      </AccordianSectionContainer>
+
     )
   }
 }
+
+export default withRouter(AcordianMenu)

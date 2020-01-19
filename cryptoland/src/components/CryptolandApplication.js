@@ -1,26 +1,11 @@
 import React from 'react';
-import { AccordianSectionContainer, AccordianTextContainer } from '../styles';
 import AcordianMenu from './Accordian/AccordianMenu';
 
-export default class extends React.Component {
-  state = {
-    isShowing: false
-  };
-
-  clickHandler = () => {
-    this.setState({ isShowing: !this.state.isShowing });
-  };
-
-  render() {
+function CryptolandApplication() {
     return (
-      <AccordianSectionContainer>
-        <AcordianMenu
-          clickHandler={this.clickHandler}
-          text={'Cryptoland Application'}
-          isShowing={this.state.isShowing}
-        />
-        {this.state.isShowing && (
-          <AccordianTextContainer style={{}}>
+      <>
+        <AcordianMenu text={'Cryptoland Application'}>
+          <>
             <p>
               The CRYPTOLAND mobile application gives community members a
               networking environment that provides a podium to share brilliant
@@ -45,9 +30,11 @@ export default class extends React.Component {
               community members to other brilliant minds and a brilliant
               financial future.
             </p>
-          </AccordianTextContainer>
-        )}
-      </AccordianSectionContainer>
+          </>
+        </AcordianMenu>
+      </>
     );
-  }
+
 }
+
+export default CryptolandApplication

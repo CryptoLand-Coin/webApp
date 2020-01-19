@@ -8,7 +8,7 @@ function HashButton(props) {
        <ButtonContainer
         noDecoration
         noBackground
-        textColor={`${props.location.hash === props.accordianId ? '#55E2BE' : !props.isInHero ? '#020202' : "white"}`}
+        textColor={`${props.location.hash === props.accordianId ? '#55E2BE' : '#efefef'}`}
         fontSize="0.925em"
         fontWeight="900"
         letterSpacing="1.5px"

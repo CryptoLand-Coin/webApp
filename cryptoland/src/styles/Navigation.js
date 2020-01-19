@@ -8,7 +8,8 @@ export const NavigationContainer = styled.div`
     align-items: center;
     position: fixed;
     z-index: 1;
-    background-color: ${props => props.isInHero ? 'rgba(0,0,0,0.75)' : '#efefef'};
+    opacity: ${props => props.isInHero ? '0.9' : '1'}
+    background-color: #020202;
     transition: all 0.2s ease;
 
 
@@ -61,10 +62,10 @@ export const HamburgerMenuContainer = styled.div`
   top: 0;
   left: 0;
   z-index: 1000;
-  opacity: 0.9;
+  opacity: ${props => props.isInHero ? '0.9' : '1'}
   display: flex;
   align-items: center;
-  background-color: ${props => props.isInHero ? '#020202' : '#efefef'};
+  background-color: #020202;
   width: 100%;
   color: white;
   height: 75px;
@@ -132,9 +133,9 @@ export const MenuContainer = styled.div`
   width: 100vw;
   display: flex;
   flex-direction: column;
-  background-color: ${props => props.isInHero ? '#020202' : '#efefef'};
+  background-color: #020202;
   opacity: 0.95;
-  color: ${props => props.isInHero ? '#efefef' : '#020202 '};
+  color: #efefef;
   transition: height 0.3s ease;
   z-index: 2;
 
@@ -158,8 +159,7 @@ export const MenuItemContainer = styled.div`
     animation-delay: ${props => props.delay};
 
     a {
-      color: ${props => props.hover ? 'gray'
-      : props.isInHero ? '#efefef' : '#020202'};
+      color: ${props => props.hover ? 'gray': '#efefef'};
       text-decoration: none;
     }
   }

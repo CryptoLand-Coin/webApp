@@ -1,26 +1,11 @@
 import React from 'react';
-import { AccordianSectionContainer, AccordianTextContainer } from '../styles';
 import AcordianMenu from './Accordian/AccordianMenu';
 
-export default class extends React.Component {
-  state = {
-    isShowing: false
-  };
-
-  clickHandler = () => {
-    this.setState({ isShowing: !this.state.isShowing });
-  };
-
-  render() {
+function TransactionSpeed() {
     return (
-      <AccordianSectionContainer>
-        <AcordianMenu
-          clickHandler={this.clickHandler}
-          text={'Transaction Speed'}
-          isShowing={this.state.isShowing}
-        />
-        {this.state.isShowing && (
-          <AccordianTextContainer style={{}}>
+      <>
+        <AcordianMenu text={'Transaction Speed'}>
+          <>
             <p>
               Boasting one of the fastest transaction speeds in the
               Cryptocurrency Industry, outpacing even the most tenured coins,
@@ -48,9 +33,10 @@ export default class extends React.Component {
               create, sustain, and grow long-term financial investment and
               security.
             </p>
-          </AccordianTextContainer>
-        )}
-      </AccordianSectionContainer>
+          </>
+        </AcordianMenu>
+      </>
     );
-  }
 }
+
+export default TransactionSpeed

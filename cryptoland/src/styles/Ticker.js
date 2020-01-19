@@ -14,8 +14,7 @@ const ticker = keyframes`
 export const TickerContainer = styled.div`
     width: 100%;
     display: flex;
-    /* justify-content: center; */
-    background-color: ${props => props.isInHero ? '#020202 ': '#efefef'};
+    background-color: #020202;
     font-size: .8em;
     align-items: center;
     margin-top: ${props => props.width > 960 ? '100px' : '75px'};
@@ -51,12 +50,12 @@ export const TickerContainer = styled.div`
           h1 {
               font-weight: 900;
               margin-left: 1%;
-              color: ${props => props.isInHero ? '#efefef' : '#020202 '};
+              color: #efefef;
           }
 
           p {
               margin-left: 0.25%;
-              color: ${props => props.isInHero ? '#efefef' : '#020202 '};
+              color: #efefef
           }
 
           i {

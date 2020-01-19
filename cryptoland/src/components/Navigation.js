@@ -124,7 +124,7 @@ class Navigation extends Component {
               </div>
               <MenuButton
                 open={this.state.menuOpen}
-                color={this.state.isInHero ? 'white' : '#020202'}
+                color={'white'}
                 onClick={()=>this.handleMenuClick()}
               />
             </HamburgerMenuContainer>
