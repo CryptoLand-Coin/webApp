@@ -26,6 +26,7 @@ class Navigation extends Component {
   state={
     menuOpen: false,
     isInHero: true,
+    previousAccordionId: null
   }
 
   componentDidMount() {
@@ -80,16 +81,37 @@ class Navigation extends Component {
     });
   }
 
-  scrollElement = accordianId => {
-      const hashLocation = this.props.history.location.hash
+  scrollElement = async accordianId => {
+    // array of anchors
+    const locations = ['#howitworks', '#whitepaper', '#roadmap', '#hero']
 
-      if(hashLocation.includes(accordianId) || accordianId === '#hero') {
-        const element = document.querySelector(`${accordianId}`)
-        const navbarOffset = (accordianId === '#hero') ? 0
-        : this.props.width < 960 ? -115 : -120;
-        const y = element.getBoundingClientRect().top + window.scrollY + navbarOffset;
-        window.scrollTo({ top: y, behavior: 'smooth' })
+    // check if id matches possible locations array
+    if(locations.includes(accordianId)) {
+      const element = document.querySelector(`${accordianId}`)
+      const navbarOffset = (accordianId === '#hero') ? 0 : this.props.width < 960 ? -115 : -120;
+      let previousAccordionHeight = 0
+      let y
+
+      // Gets height of previous open div
+      if(this.state.previousAccordionId && this.state.previousAccordionId !== accordianId) {
+        previousAccordionHeight = document.querySelector(`${this.state.previousAccordionId}`).clientHeight - 80
       }
+
+      // Subtracts previous Div's height from calc if element top is not less than 120 or the previous div is the hero
+      if(element.getBoundingClientRect().top < 120 || this.state.previousAccordionId === '#hero') {
+        y = element.getBoundingClientRect().top + window.scrollY + navbarOffset;
+      } else {
+        y = element.getBoundingClientRect().top + window.scrollY + navbarOffset - previousAccordionHeight;
+      }
+
+      window.scrollTo({ top: y, behavior: 'smooth' })
+    }
+
+    // Sets state with current accordianId for future use.
+    this.setState({
+      ...this.state,
+      previousAccordionId: accordianId
+    })
 
   }
 
@@ -137,7 +159,10 @@ class Navigation extends Component {
                 <img
                   src='./assets/Cryptoland_Logo_Green_Icon.png'
                   alt='Cryptoland company logo'
-                  onClick={() => this.scrollElement('#hero')}
+                  onClick={async () => {
+                    await this.props.history.push('/')
+                    this.scrollElement('#hero')
+                  }}
                 />
               </div>
               <MenuButton
