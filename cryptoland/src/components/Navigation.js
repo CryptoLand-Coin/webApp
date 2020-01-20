@@ -87,7 +87,6 @@ class Navigation extends Component {
       // console.log('this.props.history: ', this.props)
       //
       // if(hashLocation.includes(accordianId) || accordianId === '#hero') {
-        window.scrollTo({ top: 500, behavior: 'smooth' })
         const element = document.querySelector(`${accordianId}`)
         const navbarOffset = (accordianId === '#hero') ? 0
         : this.props.width < 960 ? -115 : -120;
