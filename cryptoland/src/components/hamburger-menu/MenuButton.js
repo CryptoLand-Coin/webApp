@@ -22,7 +22,6 @@ class MenuButton extends Component {
   }
 
   render(){
-    console.log('menu button color: ', this.props.color)
     return(
       <MenuButtonContainer
         open={this.state.open}

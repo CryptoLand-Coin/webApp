@@ -80,8 +80,27 @@ class Navigation extends Component {
     });
   }
 
+  scrollElement = accordianId => {
+      console.log('accordianId: ', accordianId)
+      // const hashLocation = this.props.history.location.hash
+      // console.log('hashLocation: ', hashLocation)
+      // console.log('this.props.history: ', this.props)
+      //
+      // if(hashLocation.includes(accordianId) || accordianId === '#hero') {
+        window.scrollTo({ top: 500, behavior: 'smooth' })
+        const element = document.querySelector(`${accordianId}`)
+        const navbarOffset = (accordianId === '#hero') ? 0
+        : this.props.width < 960 ? -115 : -120;
+        console.log('const yOffset: ', navbarOffset)
+        const y = element.getBoundingClientRect().top + window.scrollY + navbarOffset;
+        console.log('element.offsetTop: ', element.getBoundingClientRect())
+        console.log('const y: ', y)
+        window.scrollTo({ top: y, behavior: 'smooth' })
+      // }
+
+  }
+
   render() {
-    console.log('isInHer: ', this.state.isInHero)
     const menu = ['HOW IT WORKS','WHITE PAPER','ROADMAP','TEAM','LOGIN']
     const menuItems = menu.map((item, i) => {
       const lowerItem = item.toLowerCase()
@@ -92,7 +111,6 @@ class Navigation extends Component {
         <MenuItem
           key={i}
           delay={`${i * 0.1}s`}
-          onClick={() => { this.handleLinkClick() }}
         >
           {item === 'LOGIN' ? (
             <a href='https://cryptoland.icoadm.in/users/sign_in' >{item}</a>
@@ -100,7 +118,10 @@ class Navigation extends Component {
           : (
             <Link
              to={`/#${itemLink}`}
-             scroll={el=>el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+             onClick={() => {
+               this.scrollElement(`#${itemLink}`)
+               this.handleLinkClick()
+             }}
             >
                 <p>{item}</p>
             </Link>
@@ -120,7 +141,11 @@ class Navigation extends Component {
               isInHero={this.state.isInHero}
             >
               <div className='menu-logo'>
-                <img src='./assets/Cryptoland_Logo_Green_Icon.png' alt='Cryptoland company logo' />
+                <img
+                  src='./assets/Cryptoland_Logo_Green_Icon.png'
+                  alt='Cryptoland company logo'
+                  onClick={() => this.scrollElement('#hero')}
+                />
               </div>
               <MenuButton
                 open={this.state.menuOpen}
@@ -128,7 +153,10 @@ class Navigation extends Component {
                 onClick={()=>this.handleMenuClick()}
               />
             </HamburgerMenuContainer>
-            <Menu open={this.state.menuOpen}>
+            <Menu
+              open={this.state.menuOpen}
+              scrollElement={this.scrollElement}
+            >
               <div className='menu-body'>
                 {menuItems}
                 <MenuFooter />
@@ -143,29 +171,38 @@ class Navigation extends Component {
             <img style={{
                 cursor: 'pointer'
             }}
-            onClick={() => this.props.history.push('/')}
-            src='assets/Cryptoland_Logo_Green_Icon.png' />
+            onClick={async () => {
+              await this.props.history.push('/')
+              this.scrollElement('#hero')
+            }}
+            src='assets/Cryptoland_Logo_Green_Icon.png'
+            alt='Cryptoland logo'
+            />
 
             <div>
                 <HashButton
                   text="HOW IT WORKS"
                   accordianId="#howitworks"
                   isInHero={this.state.isInHero}
+                  scrollElement={this.scrollElement}
                 />
                 <HashButton
                   text="WHITE PAPER"
                   accordianId="#whitepaper"
                   isInHero={this.state.isInHero}
+                  scrollElement={this.scrollElement}
                 />
                 <HashButton
                   text="ROADMAP"
                   accordianId="#roadmap"
                   isInHero={this.state.isInHero}
+                  scrollElement={this.scrollElement}
                 />
                 <HashButton
                   text="TEAM"
                   accordianId="#team"
                   isInHero={this.state.isInHero}
+                  scrollElement={this.scrollElement}
                 />
                 <Button
                 onClick={() => window.open("https://cryptoland.icoadm.in/")}

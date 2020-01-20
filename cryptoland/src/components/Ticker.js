@@ -21,9 +21,8 @@ class Tick extends Component {
 
   findTickerInfoWidth = () => {
     const tickerInfoWidth = document.querySelector('#ticker-info').offsetWidth
-    console.log('ticker info: ', tickerInfoWidth)
     const tickerTiming = (this.props.width + tickerInfoWidth)/50
-    console.log('ticker timing: ', tickerTiming)
+
 
     this.setState({
       tickerInfoWidth: tickerInfoWidth,
@@ -47,7 +46,7 @@ class Tick extends Component {
               <h1>CURRENT MARKET VALUE:</h1>
               <p>Cryptoland (CRYPTO) </p>
               <h1>$84.60 usd</h1>
-              <i class="fas fa-sort-up " />
+              <i className="fas fa-sort-up " />
               <p>$73.60 (+769%)</p>
             </div>
           </div>

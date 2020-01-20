@@ -1,9 +1,10 @@
 import React from 'react'
-import { HashLink as Link } from 'react-router-hash-link'
+// import { HashLink as Link } from 'react-router-hash-link'
 import { ButtonContainer } from '../../styles'
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 
 function HashButton(props) {
+
    return(
        <ButtonContainer
         noDecoration
@@ -15,7 +16,7 @@ function HashButton(props) {
        >
            <Link
             to={'/' + props.accordianId}
-            scroll={el=>el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+            onClick={() => props.scrollElement(props.accordianId)}
            >
                <p>{props.text}</p>
            </Link>

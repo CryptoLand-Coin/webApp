@@ -14,15 +14,15 @@ function HeroDescription() {
           <strong>Then they get paid for it.</strong>
           <ul>
             <div>
-              <i class="far fa-check-circle" />
+              <i className="far fa-check-circle" />
               <li>Invest in a cryptocurrency that has real utility </li>
             </div>
             <div>
-              <i class="far fa-check-circle" />
+              <i className="far fa-check-circle" />
               <li>Explore the world’s first crypto-backed social media network</li>
             </div>
             <div>
-              <i class="far fa-check-circle" />
+              <i className="far fa-check-circle" />
               <li>Capitalize on your data, while solidifying your financial future</li>
             </div>
           </ul>

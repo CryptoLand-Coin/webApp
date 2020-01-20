@@ -15,19 +15,19 @@ function CryptoProgess(props) {
         <div className="purchaseHeader">
           <p>{props.width < 620 ? 'Purchase with:' : 'Purchase CRYPTO with:'}</p>
           <div>
-            <img src="/assets/USD.png" />
+            <img src="/assets/USD.png" alt='USD currency logo' />
             <p>USD</p>
           </div>
           <div>
-            <img src="/assets/BTC.png"/>
+            <img src="/assets/BTC.png" alt='BTC currency logo'/>
             <p>BTC</p>
           </div>
           <div>
-            <img src="/assets/ETH.png"/>
+            <img src="/assets/ETH.png" alt='ETH currency logo'/>
             <p>ETH</p>
           </div>
           <div>
-            <img src="/assets/LTC.png"/>
+            <img src="/assets/LTC.png" alt='LTC currency logo'/>
             <p>LTC</p>
           </div>
         </div>
