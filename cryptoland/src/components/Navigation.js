@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-// import { HashLink as Link } from 'react-router-hash-link'
+import { HashLink as Link } from 'react-router-hash-link'
 import { connect } from 'react-redux';
-import { withRouter, Link } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 
 import HashButton from './Buttons/HashButton'
 import Button from './Buttons/Button'
@@ -88,7 +88,7 @@ class Navigation extends Component {
         const navbarOffset = (accordianId === '#hero') ? 0
         : this.props.width < 960 ? -115 : -120;
         const y = element.getBoundingClientRect().top + window.scrollY + navbarOffset;
-        window.scrollTo({ top: 'y', behavior: 'smooth' })
+        window.scrollTo({ top: y, behavior: 'smooth' })
       }
 
   }
@@ -113,7 +113,6 @@ class Navigation extends Component {
              to={`/#${itemLink}`}
              onClick={() => {
                this.scrollElement(`#${itemLink}`)
-               this.handleLinkClick()
              }}
             >
                 <p>{item}</p>
@@ -148,6 +147,7 @@ class Navigation extends Component {
             </HamburgerMenuContainer>
             <Menu
               open={this.state.menuOpen}
+
             >
               <div className='menu-body'>
                 {menuItems}
