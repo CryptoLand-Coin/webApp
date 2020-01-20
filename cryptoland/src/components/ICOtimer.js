@@ -3,25 +3,30 @@ import moment from 'moment/min/moment-with-locales'
 import { TimerContainer } from '../styles/ICOtimer'
 
 function ICOtimer() {
-    const [time, setTime] = useState()
-    setInterval(()=>{
-        const endTime = moment("07/31/2020")
-        const startTime = moment(Date.now())
-        const diff = endTime.diff(startTime)
-        const days = Math.floor( diff/(1000*60*60*24))
-        const hours = Math.floor( (diff/(1000*60*60) % 24))
-        const minutes = Math.floor( (diff/1000/60) % 60)
-        const seconds = Math.floor( (diff/1000) % 60)
-        setTime({
-            days,
-            hours,
-            minutes,
-            seconds
-        })
-    }, 1000)
+    const [time, setTime] = useState({
+      days: 192,
+      hours: 22,
+      minutes: 10,
+      seconds: 50
+    })
+    // setInterval(()=>{
+    //     const endTime = moment("07/31/2020")
+    //     const startTime = moment(Date.now())
+    //     const diff = endTime.diff(startTime)
+    //     const days = Math.floor( diff/(1000*60*60*24))
+    //     const hours = Math.floor( (diff/(1000*60*60) % 24))
+    //     const minutes = Math.floor( (diff/1000/60) % 60)
+    //     const seconds = Math.floor( (diff/1000) % 60)
+    //     setTime({
+    //         days,
+    //         hours,
+    //         minutes,
+    //         seconds
+    //     })
+    // }, 1000)
    return(
            <TimerContainer>
-               {time && 
+               {time &&
                <>
                    <div>
                        <h1>{time.days}</h1>
