@@ -22,7 +22,7 @@ export default function() {
               Privacy Policy
             </h1>
             <div style={{ height: '85vh'}}>
-                <iframe src="https://drive.google.com/file/d/1wMh8_nMLoU2OYOBDwoKsJRtNoCEduGcT/preview" width={window.innerWidth} height="100%"></iframe>
+                <iframe title='privacy-iframe' src="https://drive.google.com/file/d/1wMh8_nMLoU2OYOBDwoKsJRtNoCEduGcT/preview" width={window.innerWidth} height="100%"></iframe>
             </div>
           </div>
         </div>

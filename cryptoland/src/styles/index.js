@@ -3,7 +3,12 @@ import {
 } from './AppContainer'
 
 import {
-    NavigationContainer
+    NavigationContainer,
+    // hamburger menu
+    HamburgerMenuContainer,
+    MenuContainer,
+    MenuItemContainer,
+    MenuButtonContainer
 } from './Navigation'
 
 import {
@@ -11,7 +16,7 @@ import {
 } from './Ticker'
 
 import {
-    LandingPageHero
+    LandingPageHero, HeroDescriptionContainer, CryptoProgressContainer
 } from './LandingPage'
 
 import {
@@ -19,8 +24,7 @@ import {
 } from './Footer'
 
 import {
-    BuyCryptoButton,
-    Button
+    ButtonContainer
 } from './Buttons'
 
 import {
@@ -42,9 +46,9 @@ import {
     FaqQAContainer
 } from './Faqs'
 
-import { 
+import {
     RoadMapContainer
-} from './RoadMap' 
+} from './RoadMap'
 
 import {
     AccordianTextContainer
@@ -53,11 +57,19 @@ import {
 export {
     AppContainer,
     NavigationContainer,
+// --------------------------------------------
+    // hamburger menu
+    HamburgerMenuContainer,
+    MenuContainer,
+    MenuItemContainer,
+    MenuButtonContainer,
+// --------------------------------------------
     TickerContainer,
     LandingPageHero,
+    HeroDescriptionContainer,
+    CryptoProgressContainer,
     FooterContainer,
-    BuyCryptoButton,
-    Button,
+    ButtonContainer,
     AccordianSectionContainer,
     AcordianBarContainer,
     EmailSubscriberContainer,

@@ -1,14 +1,24 @@
 import React from 'react';
-import { Switch, Route, withRouter } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 
 import { AppContainer } from './styles'
-import { Navigation, Ticker, LandingPage, NoMatch, Footer, PrivacyPolicy, TermsAndConditions, Faqs, ContactUs } from './components'
+import {
+  Navigation,
+  Tick,
+  LandingPage,
+  NoMatch,
+  Footer,
+  PrivacyPolicy,
+  TermsAndConditions,
+  Faqs,
+  ContactUs
+} from './components'
 
 function App() {
   return (
     <AppContainer>
       <Navigation />
-      <Ticker />
+      <Tick />
 
       <Switch>
         <Route exact path='/' component={LandingPage} />
@@ -18,8 +28,8 @@ function App() {
         <Route path='/termsandconditions' component={TermsAndConditions} />
 
         <Route component={NoMatch} />
-      </Switch>  
-      
+      </Switch>
+
       <Footer />
     </AppContainer>
   );

@@ -1,51 +1,13 @@
 import styled from 'styled-components'
 
-export const BuyCryptoButton = styled.div`
-    margin-top: 3.5%;
-    border: 5px solid #01A76E;
-    width: 16%;
-    padding: 1% 0;
-    text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
-
-    @media (max-width: 1200px) {
-      width: 25%;
-      margin-top: 10%;
-      padding: 2%;
-    }    
-
-    @media (max-width: 750px) {
-      width: 40%;
-      margin-top: 10%;
-      padding: 4%;
-    } 
-
-    @media (max-width: 470px) {
-      padding: 3%;
-      font-size: 0.8em;
-    }
-
-    @media (max-width: 470px) {
-      width: 60%;
-    }
-
-    p {
-        color: white;
-        font-size: 1.7em;
-        font-weight: 700;
-    }
-
-
-`
-
-export const Button = styled.button`
+export const ButtonContainer = styled.button`
   width: ${props => props.width};
   height: ${props => props.height};
   margin: ${props => props.margin};
   padding: ${props => props.padding};
   color: ${props => props.textColor};
   background-color: ${props => props.backgroundColor};
+  background: ${props => props.noBackground ? "none" : props.background};
   border: none;
   border-radius: 3px;
   font-size: ${props => props.fontSize};
@@ -53,6 +15,20 @@ export const Button = styled.button`
   cursor: pointer;
   transition: all .3s ease;
   outline: none;
+  letter-spacing: ${props => props.letterSpacing}
+
+  a {
+    text-decoration: ${props => props.noDecoration && "none"};
+    color: ${props => props.textColor};
+    font-size: ${props => props.fontSize};
+    font-weight: ${props => props.fontWeight};
+
+    p {
+      margin: 0;
+      font-size: ${props => props.fontSize};
+      font-weight: ${props => props.fontWeight};
+    }
+  }
 
   :hover {
     /* transform: scale(1.05); */

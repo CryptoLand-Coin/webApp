@@ -22,7 +22,7 @@ export default function() {
               Terms and Conditions
             </h1>
             <div style={{ height: '85vh'}}>
-                <iframe src="https://drive.google.com/file/d/1I49qrIhdYWNKvX4t--fNHCiAVh4k97UC/preview" width={window.innerWidth} height="100%"></iframe>
+                <iframe title='tmc-iframe' src="https://drive.google.com/file/d/1I49qrIhdYWNKvX4t--fNHCiAVh4k97UC/preview" width={window.innerWidth} height="100%"></iframe>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 
-import { Button, EmailSubscriberContainer } from '../styles';
+import { ButtonContainer, EmailSubscriberContainer } from '../styles';
 
 export default class extends React.Component {
   state = {
@@ -82,7 +82,7 @@ export default class extends React.Component {
         <h1>Stay Informed</h1>
         <p>Subscribe to our newsletter and we will periodically send you updates and info about Cryptoland</p>
         <div>
-          <form onSubmit={this.submitHandler}>
+          <form action="https://script.google.com/macros/s/AKfycbw21W9Eg2IYObMXQUlXtxJygyo4Rz-dJaXNj13TeoDNEUpyOiY/exec" method="post">
             <input
               name='subscriberEmail'
               type='email'
@@ -91,7 +91,7 @@ export default class extends React.Component {
               value={this.state.subscriberEmail}
               onChange={this.changeHandler}
             />
-            <Button
+            <ButtonContainer
               type='submit'
               width={'300px'}
               height={'80px'}
@@ -107,7 +107,7 @@ export default class extends React.Component {
               m600fontSize={'1.3rem'}
             >
               SUBSCRIBE
-            </Button>
+            </ButtonContainer>
           </form>
         </div>
         {this.state.successMessage ? (
