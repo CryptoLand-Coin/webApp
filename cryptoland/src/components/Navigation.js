@@ -81,21 +81,15 @@ class Navigation extends Component {
   }
 
   scrollElement = accordianId => {
-      console.log('accordianId: ', accordianId)
-      // const hashLocation = this.props.history.location.hash
-      // console.log('hashLocation: ', hashLocation)
-      // console.log('this.props.history: ', this.props)
-      //
-      // if(hashLocation.includes(accordianId) || accordianId === '#hero') {
+      const hashLocation = this.props.history.location.hash
+
+      if(hashLocation.includes(accordianId) || accordianId === '#hero') {
         const element = document.querySelector(`${accordianId}`)
         const navbarOffset = (accordianId === '#hero') ? 0
         : this.props.width < 960 ? -115 : -120;
-        console.log('const yOffset: ', navbarOffset)
         const y = element.getBoundingClientRect().top + window.scrollY + navbarOffset;
-        console.log('element.offsetTop: ', element.getBoundingClientRect())
-        console.log('const y: ', y)
         window.scrollTo({ top: y, behavior: 'smooth' })
-      // }
+      }
 
   }
 
