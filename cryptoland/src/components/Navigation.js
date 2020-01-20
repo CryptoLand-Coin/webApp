@@ -87,8 +87,8 @@ class Navigation extends Component {
         const element = document.querySelector(`${accordianId}`)
         const navbarOffset = (accordianId === '#hero') ? 0
         : this.props.width < 960 ? -115 : -120;
-        const y = element.offsetTop + navbarOffset;
-        window.scrollTo({ top: y, behavior: 'smooth' })
+        const y = element.getBoundingClientRect().top + window.scrollY + navbarOffset;
+        window.scrollTo({ top: 'y', behavior: 'smooth' })
       }
 
   }
@@ -148,7 +148,6 @@ class Navigation extends Component {
             </HamburgerMenuContainer>
             <Menu
               open={this.state.menuOpen}
-              scrollElement={this.scrollElement}
             >
               <div className='menu-body'>
                 {menuItems}
