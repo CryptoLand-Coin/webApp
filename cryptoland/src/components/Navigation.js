@@ -113,7 +113,7 @@ class Navigation extends Component {
              to={`/#${itemLink}`}
              onClick={() => {
                this.scrollElement(`#${itemLink}`)
-               onClick={() => { this.handleLinkClick() }}
+               this.handleLinkClick()}
              }}
             >
                 <p>{item}</p>
