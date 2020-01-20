@@ -21,7 +21,7 @@ function LandingPage(props) {
               </div>
             </LandingPageHero>
             <AboutCrypto />
-            <WhitePaper />
+            {/*<WhitePaper />*/}
             <RoadMap />
             <UtilityToken />
             <TransactionSpeed />
