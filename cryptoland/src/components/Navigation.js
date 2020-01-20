@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { HashLink as Link } from 'react-router-hash-link'
+// import { HashLink as Link } from 'react-router-hash-link'
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 
 import HashButton from './Buttons/HashButton'
 import Button from './Buttons/Button'
