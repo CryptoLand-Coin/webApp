@@ -47,6 +47,13 @@ class Navigation extends Component {
   }
 
   handleNavbarLocation = () => {
+
+    const { pathname } = this.props.history.location
+
+    if(pathname === '/contactus' ||pathname === '/faqs' || pathname === '/privacypolicy' || pathname === '/termsandconditions') {
+      return null
+    }
+
     // Finding div heights
     let navbarHeight
 
@@ -233,14 +240,15 @@ class Navigation extends Component {
                   scrollElement={this.scrollElement}
                 />
                 <Button
+                text="LOGIN"
                 onClick={() => window.open("https://cryptoland.icoadm.in/")}
                 background="linear-gradient(to right, #6BDFC7 0%, #00EB9A 100%);}"
-                padding='1.25%'
+                pPadding='10% 5%'
                 textColor="white"
                 fontSize=".9em"
                 fontWeight="900"
                 letterSpacing="1.5px"
-                text="LOGIN" />
+                 />
             </div>
           </NavigationContainer>
         )}
