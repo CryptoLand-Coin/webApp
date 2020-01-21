@@ -84,6 +84,7 @@ class Navigation extends Component {
   scrollElement = async accordianId => {
     // array of anchors
     const locations = ['#howitworks', '#whitepaper', '#roadmap', '#hero']
+    const hashLocation = this.props.history.location.hash
 
     // check if id matches possible locations array
     if(locations.includes(accordianId)) {
@@ -169,8 +170,8 @@ class Navigation extends Component {
                 <img
                   src='./assets/Cryptoland_Logo_Green_Icon.png'
                   alt='Cryptoland company logo'
-                  onClick={async () => {
-                    await this.props.history.push('/')
+                  onClick={() => {
+                    this.props.history.push('/')
                     this.scrollElement('#hero')
                   }}
                 />
