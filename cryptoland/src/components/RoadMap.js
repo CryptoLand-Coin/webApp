@@ -15,7 +15,7 @@ function RoadMap() {
           <div className='offering'>
             <div>
               <p>Public Offering Date</p>
-              <p>July 1, 2020</p>
+              <p>August 1, 2020</p>
             </div>
             <div>
               <p>Minimum Coin Valuation</p>
@@ -56,7 +56,7 @@ function RoadMap() {
                 <p>$80</p>
                 <p>$75</p>
                 <p>$70</p>
-                <p>$60</p>
+                <p>$65</p>
               </div>
             </div>
 
@@ -74,13 +74,13 @@ function RoadMap() {
 
             <div className='section'>
               <div className='section-title'>
-                <p>ICO Date</p>
+                <p>Public Offering</p>
               </div>
               <div id='last' className='section-content'>
-                <p>July 1, 2020</p>
                 <p>August 1, 2020</p>
-                <p>January 1, 2020</p>
-                <p>April 1, 2020</p>
+                <p>November 1, 2020</p>
+                <p>Februaru 1, 2021</p>
+                <p>May 1, 2020</p>
               </div>
             </div>
 
@@ -92,12 +92,12 @@ function RoadMap() {
             </div>
             <div className='milestone'>
               <p>Global Exchange Listing</p>
-              <p>June 2020</p>
+              <p>July 2020</p>
             </div>
 
             <div className='milestone'>
               <p>Cryptoland Vault Application Completion</p>
-              <p>June 2020</p>
+              <p>July 2020</p>
             </div>
 
             <div className='milestone'>
