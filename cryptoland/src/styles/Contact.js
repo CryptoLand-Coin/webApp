@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 
 export const ContactContainer = styled.div`
-    margin-top: 150px;
+    padding-top: 22vh;
     height: 750px;
     text-align: center;
 
     @media (max-width: 960px) {
       margin-top: 0;
+      padding-top: 10vh;
     }
 
     h1 {
