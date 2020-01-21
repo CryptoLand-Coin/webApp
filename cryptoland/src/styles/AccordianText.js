@@ -11,8 +11,9 @@ export const AccordianTextContainer = styled.div`
     flex-direction: column;
 
     p {
-        width: 75%;
+        width: 80%;
         margin-top: 3%;
+        font-size: .8em;
     }
 
     @media (max-width: 700px) {
