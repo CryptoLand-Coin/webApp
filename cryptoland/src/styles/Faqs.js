@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
 export const FaqContainer = styled.div`
+    padding-top: 22vh;
     height: auto;
     width: 100%;
-    padding: 0 0 50px 0;
-    margin-top: 5%;
 
     @media (max-width: 960px) {
       margin: 0;
+      padding-top: 10vh;
     }
 
     h1 {

@@ -5,7 +5,7 @@ export default function() {
     <>
         <div
           style={{
-            marginTop: '100px',
+            paddingTop: '22vh',
             width: '100%',
             height: '85vh',
             display: 'flex',

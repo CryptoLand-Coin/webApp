@@ -17,6 +17,10 @@ export const ButtonContainer = styled.button`
   outline: none;
   letter-spacing: ${props => props.letterSpacing}
 
+  p {
+    padding: ${props => props.pPadding}
+  }
+
   a {
     text-decoration: ${props => props.noDecoration && "none"};
     color: ${props => props.textColor};
