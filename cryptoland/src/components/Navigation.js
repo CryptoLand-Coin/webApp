@@ -88,7 +88,7 @@ class Navigation extends Component {
     // check if id matches possible locations array
     if(locations.includes(accordianId)) {
       const element = document.querySelector(`${accordianId}`)
-      const navbarOffset = (accordianId === '#hero') ? 0 : this.props.width < 960 ? -115 : -120;
+      const navbarOffset = (accordianId === '#hero') ? 0 : this.props.width < 960 ? -95 : -120;
       let previousAccordionHeight = 0
       let y
 
@@ -100,11 +100,21 @@ class Navigation extends Component {
       // Subtracts previous Div's height from calc if element top is not less than 120 or the previous div is the hero
       if(element.getBoundingClientRect().top < 120 || this.state.previousAccordionId === '#hero') {
         y = element.getBoundingClientRect().top + window.scrollY + navbarOffset;
+        console.log('element.getBoundingClientRect().top: ', element.getBoundingClientRect().top)
+        console.log('window.scrollY: ', window.scrollY)
+        console.log('navbarOffset: ', navbarOffset)
+        console.log('y: ', y)
       } else {
         y = element.getBoundingClientRect().top + window.scrollY + navbarOffset - previousAccordionHeight;
+        console.log('element.getBoundingClientRect().top: ', element.getBoundingClientRect().top)
+        console.log('window.scrollY: ', window.scrollY)
+        console.log('navbarOffset: ', navbarOffset)
+        console.log('previousAccordionHeight: ', previousAccordionHeight)
+        console.log('y: ', y)
       }
 
-      window.scrollTo({ top: y, behavior: 'smooth' })
+      window.scroll({ top: y, behavior: 'smooth' })
+
     }
 
     // Sets state with current accordianId for future use.
