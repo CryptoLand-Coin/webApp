@@ -1,7 +1,58 @@
-import styled from 'styled-components'
+import styled, { keyframes, css } from 'styled-components'
+
+// -------- Keyframes ----------
+const rotate = keyframes`
+  0% {
+    transform: rotate(0deg)
+  }
+  10% {
+    transform: rotate(30deg)
+  }
+  20% {
+    transform: rotate(60deg)
+  }
+  30% {
+    transform: rotate(90deg)
+  }
+  40% {
+    transform: rotate(120deg)
+  }
+  50% {
+    transform: rotate(150deg)
+  }
+  60% {
+    transform: rotate(180deg)
+  }
+  70% {
+    transform: rotate(210deg)
+  }
+  80% {
+    transform: rotate(160deg)
+  }
+  90% {
+    transform: rotate(200deg)
+  }
+  95% {
+    transform: rotate(170deg)
+  }
+  100% {
+    transform: rotate(180deg)
+  }
+`
+
+const animation = props =>
+  props.isShowing ?
+    css`
+      ${rotate} .5s forwards;
+    `
+  :
+  css`
+    none
+  `
 
 export const AccordianSectionContainer = styled.div`
   height: auto;
+
 `
 export const AcordianBarContainer = styled.div`
  display: flex;
@@ -12,6 +63,7 @@ export const AcordianBarContainer = styled.div`
  background: ${props => props.color || 'black'};
  width: 100%;
  text-align: center;
+ cursor: pointer;
 
  @media (max-width: 960px) {
    height: 60px;
@@ -28,6 +80,7 @@ export const AcordianBarContainer = styled.div`
    justify-content: space-between;
    align-items: center;
    color: white;
+   transition: all .3s ease;
 
    @media (max-width: 1440px) {
      width: 70%;
@@ -61,6 +114,10 @@ export const AcordianBarContainer = styled.div`
      @media (max-width: 350px) {
        font-size: 1.3rem
      }
+   }
+
+   i {
+     animation: ${props => animation(props)};
    }
  }
 `
