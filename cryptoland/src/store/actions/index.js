@@ -34,3 +34,15 @@ export const setNavbarLocation = isInHero => {
     payload: isInHero
   };
 };
+
+// ==================================================================
+// ==== Is landing page loaded ===
+
+export const LP_LOADED = 'LP_LOADED';
+
+export const confirmLPLoaded = bool => {
+  return {
+    type: LP_LOADED,
+    payload: bool
+  };
+};
