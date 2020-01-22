@@ -1,4 +1,14 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+// ------- Keyframes --------
+const appear = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`
 
 export const AccordianTextContainer = styled.div`
     height: auto;
@@ -9,6 +19,9 @@ export const AccordianTextContainer = styled.div`
     color: white;
     font-size: 1.6em;
     flex-direction: column;
+    opacity: 0;
+    animation: 1s ${appear} forwards;
+    animation-delay: .2s;
 
     p {
         width: 80%;

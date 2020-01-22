@@ -41,10 +41,11 @@ class AcordianMenu extends Component {
         <AcordianBarContainer
           onClick={this.clickHandler}
           color={this.props.color}
+          isShowing={this.state.isShowing || hashLocation.includes(joinText)}
         >
             <div>
                 <p>{this.props.text}</p>
-                {this.state.isShowing || hashLocation.includes(joinText) ? <i className={`fas fa-chevron-up ${this.state.chevronSize}`} /> : <i className={`fas fa-chevron-down ${this.state.chevronSize}`} />}
+                <i className={`fas fa-chevron-up ${this.state.chevronSize}`} /> 
             </div>
         </AcordianBarContainer>
 
