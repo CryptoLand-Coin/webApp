@@ -3,12 +3,15 @@ import {
   WIDTH_RESIZE,
   // ==== SET Navbar Location ===
   NAVBAR_LOCATION,
+  // ==== Confirm Landing page has loaded in ===
+  LP_LOADED,
 } from '../actions'
 
 const initialState = {
   // ==== SET WINDOW SIZE ===
   width: 0,
-  isInHero: true
+  isInHero: true,
+  lpLoadedIn: false
 }
 
 const reducer = (state= initialState, action) => {
@@ -27,6 +30,13 @@ const reducer = (state= initialState, action) => {
       return {
         ...state,
         isInHero: action.payload
+      };
+// ==================================================================
+// ==== confirm landing page has loaded in ===
+    case LP_LOADED:
+      return {
+        ...state,
+        lpLoadedIn: action.payload
       };
         default:
         return state;

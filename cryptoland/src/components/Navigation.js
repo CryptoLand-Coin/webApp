@@ -88,14 +88,34 @@ class Navigation extends Component {
     });
   }
 
-  scrollElement = async accordianId => {
+  scrollElement = accordianId => {
+
+    // check if id matches possible locations array
+    if(this.props.lpLoadedIn && !this.state.menuOpen) {
+      this.scrollUtil(accordianId)
+    } else {
+      setTimeout(() => {
+        this.scrollUtil(accordianId)
+      }, 1000)
+    }
+
+    // Sets state with current accordianId for future use.
+    this.setState({
+      ...this.state,
+      previousAccordionId: accordianId
+    })
+
+  }
+
+  scrollUtil = accordianId => {
     // array of anchors
     const locations = ['#howitworks', '#whitepaper', '#roadmap', '#hero']
 
     // check if id matches possible locations array
     if(locations.includes(accordianId)) {
+
       const element = document.querySelector(`${accordianId}`)
-      const navbarOffset = (accordianId === '#hero') ? 0 : this.props.width < 960 ? -95 : -120;
+      const navbarOffset = (accordianId === '#hero') ? 0 : this.props.width < 960 ? -94 : -120;
       let previousAccordionHeight = 0
       let y
 
@@ -107,29 +127,13 @@ class Navigation extends Component {
       // Subtracts previous Div's height from calc if element top is not less than 120 or the previous div is the hero
       if(element.getBoundingClientRect().top < 120 || this.state.previousAccordionId === '#hero') {
         y = element.getBoundingClientRect().top + window.scrollY + navbarOffset;
-        console.log('element.getBoundingClientRect().top: ', element.getBoundingClientRect().top)
-        console.log('window.scrollY: ', window.scrollY)
-        console.log('navbarOffset: ', navbarOffset)
-        console.log('y: ', y)
       } else {
         y = element.getBoundingClientRect().top + window.scrollY + navbarOffset - previousAccordionHeight;
-        console.log('element.getBoundingClientRect().top: ', element.getBoundingClientRect().top)
-        console.log('window.scrollY: ', window.scrollY)
-        console.log('navbarOffset: ', navbarOffset)
-        console.log('previousAccordionHeight: ', previousAccordionHeight)
-        console.log('y: ', y)
       }
 
       window.scroll({ top: y, behavior: 'smooth' })
 
     }
-
-    // Sets state with current accordianId for future use.
-    this.setState({
-      ...this.state,
-      previousAccordionId: accordianId
-    })
-
   }
 
   render() {
@@ -176,8 +180,8 @@ class Navigation extends Component {
                 <img
                   src='./assets/Cryptoland_Logo_Green_Icon.png'
                   alt='Cryptoland company logo'
-                  onClick={async () => {
-                    await this.props.history.push('/')
+                  onClick={() => {
+                    this.props.history.push('/')
                     this.scrollElement('#hero')
                   }}
                 />
@@ -259,7 +263,8 @@ class Navigation extends Component {
 }
 
 const mapStateToProps = state => ({
-  width: state.width
+  width: state.width,
+  lpLoadedIn: state.lpLoadedIn
 })
 
 export default connect(

@@ -80,7 +80,7 @@ function RoadMap() {
                 <p>August 1, 2020</p>
                 <p>November 1, 2020</p>
                 <p>Februaru 1, 2021</p>
-                <p>May 1, 2020</p>
+                <p>May 1, 2021</p>
               </div>
             </div>
 

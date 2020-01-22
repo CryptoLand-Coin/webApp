@@ -19,6 +19,7 @@ class Menu extends Component {
   render() {
     return(
       <MenuContainer
+        id='menu'
         open={this.state.open}
         isInHero={this.props.isInHero}
       >
