@@ -51,7 +51,7 @@ class ContactUs extends Component {
           </div>
           <button>SUBMIT</button>
           <div style={{ display: 'none' }}>
-            <input name='plan' type='text' requried value='none' />
+            <input name='plan' type='text' required defaultValue='none' />
           </div>
         </form>
       </ContactContainer>
