@@ -5,7 +5,7 @@ import { ButtonContainer, EmailSubscriberContainer } from '../styles';
 
 export default class extends React.Component {
   state = {
-    subscriberEmail: '',
+    email: '',
     errorMessage: '',
     successMessage: ''
   };
@@ -82,13 +82,13 @@ export default class extends React.Component {
         <h1>Stay Informed</h1>
         <p>Subscribe to our newsletter and we will periodically send you updates and info about Cryptoland</p>
         <div>
-          <form action="https://script.google.com/macros/s/AKfycbw21W9Eg2IYObMXQUlXtxJygyo4Rz-dJaXNj13TeoDNEUpyOiY/exec" method="post">
+          <form action="https://script.google.com/macros/s/AKfycbxZgUaIsyQOjKLCTGfQpJrwGAjIsdGQIScflZxdwkLhDksxp54/exec" method="post">
             <input
-              name='subscriberEmail'
+              name='email'
               type='email'
               required
               placeholder='Email address'
-              value={this.state.subscriberEmail}
+              value={this.state.email}
               onChange={this.changeHandler}
             />
             <ButtonContainer
