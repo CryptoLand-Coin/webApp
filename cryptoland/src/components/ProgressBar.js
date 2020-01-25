@@ -3,7 +3,7 @@ import { ProgressBarContainer } from '../styles/ProgressBarContainer'
 
 function ProgressBar() {
 
-    const [funds, setFunds] = useState(0)
+    const [funds, setFunds] = useState(7456644.44)
     const [percent, setPercent] = useState(`${(1 - (funds/500000000)) * 100}%`)
 
     useEffect(()=> {
@@ -26,7 +26,7 @@ function ProgressBar() {
                 <h1 className="sftext">START</h1>
                 <div className="coincount">
                     <img src="assets/USD.png" alt='USD curreny logo'/>
-                    <h1 className="count">{funds}</h1>
+                    <h1 className="count">{funds.toLocaleString()}</h1>
                     <h1>Capital Raised</h1>
                 </div>
                 <h1 className="sftext">FINISH</h1>
