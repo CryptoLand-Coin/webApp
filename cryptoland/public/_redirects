@@ -7,3 +7,6 @@ https://cryptoland.io/* https://cryptolandico.com/:splat 301!
 https://cryptolandico.netlify.com/* https://cryptolandico.com/:splat 301!
 
 https://www.cryptolandico.netlify.com/* https://cryptolandico.com/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://cryptoland.netlify.com/* https://cryptolandico.com/:splat 301!
