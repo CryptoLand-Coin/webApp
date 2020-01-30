@@ -149,7 +149,7 @@ class Navigation extends Component {
           delay={`${i * 0.1}s`}
         >
           {item === 'LOGIN' ? (
-            <a href='https://cryptoland.icoadm.in/users/sign_in' >{item}</a>
+            <a href='https://cryptoland.icoadm.in/?referral=<referral>' >{item}</a>
           )
           : (
             <Link
@@ -245,7 +245,7 @@ class Navigation extends Component {
                 />
                 <Button
                 text="LOGIN"
-                onClick={() => window.open("https://cryptoland.icoadm.in/")}
+                onClick={() => window.open("https://cryptoland.icoadm.in/?referral=<referral>")}
                 background="linear-gradient(to right, #6BDFC7 0%, #00EB9A 100%);}"
                 pPadding='10% 5%'
                 textColor="white"
