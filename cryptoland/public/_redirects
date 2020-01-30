@@ -2,7 +2,9 @@
 
 # Redirect domain aliases to primary domain
 https://cryptolandico.io/* https://cryptolandico.com/:splat 301!
+https://www.cryptolandico.io/* https://cryptolandico.com/:splat 301!
 https://cryptoland.io/* https://cryptolandico.com/:splat 301!
+https://www.cryptoland.io/* https://cryptolandico.com/:splat 301!
 
 https://cryptolandico.netlify.com/* https://cryptolandico.com/:splat 301!
 
