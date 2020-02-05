@@ -3,7 +3,7 @@ import { ProgressBarContainer } from '../styles/ProgressBarContainer'
 
 function ProgressBar() {
 
-    const [funds, setFunds] = useState(19537.99)
+    const [funds, setFunds] = useState(153487.39)
     const [percent, setPercent] = useState(`${(1 - (funds/500000000)) * 100}%`)
 
     useEffect(()=> {
