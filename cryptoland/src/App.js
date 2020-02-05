@@ -22,6 +22,11 @@ function App() {
 
       <Switch>
         <Route exact path='/' component={LandingPage} />
+        <Route path='/howitworks' component={NoMatch} />
+        <Route path='/currency' component={NoMatch} />
+        <Route path='/rewards' component={NoMatch} />
+        <Route path='/app' component={NoMatch} />
+        <Route path='/foundation' component={NoMatch} />
         <Route path='/faqs' component={Faqs} />
         <Route path='/contactus' component={ContactUs} />
         <Route path='/privacypolicy' component={PrivacyPolicy} />

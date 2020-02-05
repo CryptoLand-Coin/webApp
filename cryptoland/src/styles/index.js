@@ -1,82 +1,93 @@
+// ----------------------------------------------------
+// App
+import { AppContainer } from './app/AppContainer'
+
+// ----------------------------------------------------
+// Navigation
 import {
-    AppContainer
-} from './AppContainer'
+  NavigationContainer,
+// ------------------------
+  // hamburger menu
+  HamburgerMenuContainer,
+  MenuContainer,
+  MenuItemContainer,
+  MenuButtonContainer
+} from './navigation/Navigation'
+
+// ----------------------------------------------------
+// Landing page
+import { TickerContainer } from './landing-page/hero/Ticker'
+
+import { TimerContainer } from './landing-page/hero/ICOtimer'
+
+import { ProgressBarContainer } from './landing-page/hero/ProgressBarContainer'
 
 import {
-    NavigationContainer,
-    // hamburger menu
-    HamburgerMenuContainer,
-    MenuContainer,
-    MenuItemContainer,
-    MenuButtonContainer
-} from './Navigation'
+  // Hero
+  LandingPageHero,
+  HeroDescriptionContainer,
+  CryptoProgressContainer
+} from './landing-page/LandingPage'
+
+// Email Sub
+import { EmailSubscriberContainer } from './landing-page/EmailSubscriber'
+
+// ----------------------------------------------------
+// Views
+import { ContactContainer } from './views/Contact'
 
 import {
-    TickerContainer
-} from './Ticker'
+  FaqContainer,
+  FaqQATextContainer,
+  FaqQAContainer
+} from './views/Faqs'
 
-import {
-    LandingPageHero, HeroDescriptionContainer, CryptoProgressContainer
-} from './LandingPage'
-
+// ----------------------------------------------------
+// Footer
 import {
     FooterContainer
-} from './Footer'
+} from './footer/Footer'
 
+// ----------------------------------------------------
+// Accessories
 import {
     ButtonContainer
-} from './Buttons'
+} from './accessories/Buttons'
 
-import {
-    AccordianSectionContainer,
-    AcordianBarContainer
-} from './Accordian'
-
-import {
-    EmailSubscriberContainer
-} from './EmailSubscriber'
-
-import {
-    ContactContainer
-} from './Contact'
-
-import {
-    FaqContainer,
-    FaqQATextContainer,
-    FaqQAContainer
-} from './Faqs'
-
-import {
-    RoadMapContainer
-} from './RoadMap'
-
-import {
-    AccordianTextContainer
-} from './AccordianText'
 
 export {
-    AppContainer,
-    NavigationContainer,
-// --------------------------------------------
-    // hamburger menu
-    HamburgerMenuContainer,
-    MenuContainer,
-    MenuItemContainer,
-    MenuButtonContainer,
-// --------------------------------------------
-    TickerContainer,
-    LandingPageHero,
-    HeroDescriptionContainer,
-    CryptoProgressContainer,
-    FooterContainer,
-    ButtonContainer,
-    AccordianSectionContainer,
-    AcordianBarContainer,
-    EmailSubscriberContainer,
-    ContactContainer,
-    FaqContainer,
-    FaqQATextContainer,
-    FaqQAContainer,
-    RoadMapContainer,
-    AccordianTextContainer
+// ----------------------------------------------------
+  // App
+  AppContainer,
+// ----------------------------------------------------
+  // Navigation
+  NavigationContainer,
+  // hamburger menu
+  HamburgerMenuContainer,
+  MenuContainer,
+  MenuItemContainer,
+  MenuButtonContainer,
+// ----------------------------------------------------
+  // Landing page
+  TickerContainer,
+  TimerContainer,
+  ProgressBarContainer,
+  // Hero
+  LandingPageHero,
+  HeroDescriptionContainer,
+  CryptoProgressContainer,
+  // Email Sub
+  EmailSubscriberContainer,
+// ----------------------------------------------------
+  // Views
+  ContactContainer,
+  FaqContainer,
+  FaqQATextContainer,
+  FaqQAContainer,
+// ----------------------------------------------------
+  // Footer
+  FooterContainer,
+// ----------------------------------------------------
+  // Accessories
+  ButtonContainer,
 }
