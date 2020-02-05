@@ -31,6 +31,26 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Cryptoland</title>
+    <!-- Referral script -->
+    <script>
+      (function () {
+        function getParameterByName(name, url) {
+          if (!url) url = window.location.href;
+          name = name.replace(/[\[\]]/g, "\\$&");
+          var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+              results = regex.exec(url);
+          if (!results) return null;
+          if (!results[2]) return '';
+          return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+        var referral = getParameterByName('referral');
+        if (referral) {
+          var date = new Date();
+          date.setMonth(date.getMonth() + 3);
+          document.cookie = 'referral_user_id=' + encodeURIComponent(referral) + ";path=/;expires=" + date.toGMTString() + ";domain=." + location.host;
+        }
+      })();
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
