@@ -46,7 +46,7 @@ class Navigation extends Component {
 
     const { pathname } = this.props.history.location
 
-    if(pathname === '/contactus' ||pathname === '/faqs' || pathname === '/privacypolicy' || pathname === '/termsandconditions') {
+    if(pathname !== '/') {
       return null
     }
 
@@ -121,7 +121,7 @@ class Navigation extends Component {
                 key={i}
                 noDecoration
                 noBackground
-                textColor={`${this.props.location.pathname === `/${itemLink}` ? '#55E2BE' : '#efefef'}`}
+                textColor={`${this.props.location.pathname === `/${itemLink}` ? '#55E2BE' : this.props.location.pathname === '/' ? '#efefef' : '#808080'}`}
                 fontSize="0.925em"
                 fontWeight="900"
                 letterSpacing="1.5px"
@@ -137,7 +137,7 @@ class Navigation extends Component {
                 noBackground
                 border='2px solid #00eb9a'
                 pPadding='10% 5%'
-                textColor="white"
+                textColor={this.props.location.pathname === '/' ? 'white' : '#808080'}
                 fontSize=".9em"
                 fontWeight="900"
                 letterSpacing="1.5px"
@@ -164,6 +164,7 @@ class Navigation extends Component {
                   alt='Cryptoland company logo'
                   onClick={() => {
                     this.props.history.push('/')
+                    this.handleMenuClick()
                   }}
                 />
               </div>
@@ -187,11 +188,12 @@ class Navigation extends Component {
           <NavigationContainer
             id='navbar'
             isInHero={this.state.isInHero}
+            path={this.props.location.pathname}
           >
             <img
               style={{cursor: 'pointer'}}
               onClick={() => this.props.history.push('/')}
-              src='./assets/images/Cryptoland_Logo_Green_Icon.png'
+              src={(this.props.location.pathname === '/') ? './assets/images/Cryptoland_Logo_Green_Icon.png' : './assets/images/Cryptoland_Logo_ALL_Green.png'}
               alt='Cryptoland logo'
             />
             <div>
@@ -207,7 +209,6 @@ class Navigation extends Component {
 
 const mapStateToProps = state => ({
   width: state.width,
-  lpLoadedIn: state.lpLoadedIn
 })
 
 export default connect(

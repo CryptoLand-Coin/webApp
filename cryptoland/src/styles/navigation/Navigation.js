@@ -8,8 +8,8 @@ export const NavigationContainer = styled.div`
     align-items: center;
     position: fixed;
     z-index: 1;
-    opacity: ${props => props.isInHero ? '0.9' : '1'}
-    background-color: #020202;
+    opacity: ${props => props.isInHero && props.path === '/' ? '0.9' : '1'}
+    background-color: ${props => props.path === '/' ? '#020202' : 'white'};
     transition: all 0.2s ease;
 
 

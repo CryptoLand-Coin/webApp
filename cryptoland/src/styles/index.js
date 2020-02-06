@@ -45,6 +45,9 @@ import {
   FaqQAContainer
 } from './views/Faqs'
 
+// Views Content
+import { ViewsContentContainer } from './views/views-content/ViewsContent'
+
 // ----------------------------------------------------
 // Footer
 import {
@@ -89,6 +92,8 @@ export {
   FaqContainer,
   FaqQATextContainer,
   FaqQAContainer,
+  // Views Content
+  ViewsContentContainer,
 // ----------------------------------------------------
   // Footer
   FooterContainer,

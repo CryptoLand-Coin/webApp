@@ -39,6 +39,17 @@ import NoMatch from './errors/NoMatch'
 
 // -------------------------------------------------------------
 // Site Views
+import ViewsContent from './views-content/ViewsContent'
+
+// -------------------------------------------------------------
+// Site Views
+import WhitePaper from './views/WhitePaper'
+import HowItWorks from './views/HowItWorks'
+import Currency from './views/Currency'
+import Rewards from './views/Rewards'
+import TheApp from './views/TheApp'
+import Foundation from './views/Foundation'
+import Team from './views/Team'
 import PrivacyPolicy from './views/PrivacyPolicy'
 import TermsAndConditions from './views/TermsAndConditions'
 import Faqs from './views/Faqs'
@@ -85,6 +96,16 @@ export {
   NoMatch,
   // -------------------------------------------------------------
   // Site Views
+  ViewsContent,
+  // -------------------------------------------------------------
+  // Site Views
+  WhitePaper,
+  HowItWorks,
+  Currency,
+  Rewards,
+  TheApp,
+  Foundation,
+  Team,
   PrivacyPolicy,
   TermsAndConditions,
   Faqs,
