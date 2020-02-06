@@ -67,17 +67,18 @@ function CryptoProgress(props) {
         <ICOtimer />
 
         <Button
-        onClick={()=>window.open("https://cryptoland.icoadm.in/?referral=<referral>")}
-        background="linear-gradient(to right, #6BDFC7 0%, #00EB9A 100%);}"
-        width='84%'
-        padding='2.5%'
-        margin="4% 0 0 0"
-        textColor="white"
-        fontSize="1.25em"
-        fontWeight="900"
-        letterSpacing="1.5px"
-        text="BUY CRYPTO"
-        />
+          onClick={()=>window.open("https://cryptoland.icoadm.in/?referral=<referral>")}
+          background="linear-gradient(to right, #6BDFC7 0%, #00EB9A 100%);}"
+          width='84%'
+          padding='10px 0'
+          margin="4% 0 0 0"
+          textColor="white"
+          fontSize="1em"
+          fontWeight="900"
+          letterSpacing="1.5px"
+        >
+          BUY CRYPTO
+        </Button>
 
         <ProgressBar />
       </div>

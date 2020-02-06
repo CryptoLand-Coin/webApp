@@ -36,7 +36,7 @@ function HeroDescription() {
            fontWeight="900"
            textGradient
            hoverScale
-           padding="3% 0"
+           padding="10px 0"
            margin="1.5% 0 0 0"
            backgroundColor="white"
            m960width='100%'

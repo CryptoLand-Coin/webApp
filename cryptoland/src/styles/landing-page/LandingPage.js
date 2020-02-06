@@ -148,7 +148,7 @@ export const CryptoProgressContainer = styled.div`
       top: 5vh;
       height: 8vh;
       border-radius: 5px;
-      background: rgba(0, 0, 0, 0.6);
+      background: black;
       font-weight: 800;
       padding: 0 5%;
 
