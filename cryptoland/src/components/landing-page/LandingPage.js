@@ -15,18 +15,7 @@ import {
 
 import { LandingPageHero } from '../../styles'
 
-import { confirmLPLoaded } from '../../store/actions'
-
 class LandingPage extends Component {
-  state = {
-    loaded: false
-  }
-
-  componentDidMount() {
-    this.setState({
-      loaded: true
-    }, () => this.props.confirmLPLoaded(this.state.loaded))
-  }
 
   render() {
     return(
@@ -51,5 +40,5 @@ class LandingPage extends Component {
 
 export default connect(
   null,
-  { confirmLPLoaded }
+  { }
 )(withRouter(LandingPage))

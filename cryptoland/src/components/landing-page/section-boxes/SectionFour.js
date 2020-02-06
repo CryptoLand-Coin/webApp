@@ -11,6 +11,8 @@ function SectionFour() {
         buttonLink={'app'}
         buttonName={'THE APP'}
         buttonColor={'white'}
+        buttonTextColor={'green'}
+        textColor={'white'}
         align={'right'}
       >
         <p>Our application provides an electric environment where brands and consumers can interact cohesively, while earning monetary rewards for their presence within the CryptoLand community.</p>

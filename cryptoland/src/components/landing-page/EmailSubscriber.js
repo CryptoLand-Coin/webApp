@@ -3,6 +3,10 @@ import React from 'react';
 
 import { ButtonContainer, EmailSubscriberContainer } from '../../styles';
 
+import {
+  Button
+} from '../../components'
+
 export default class extends React.Component {
   state = {
     email: '',
@@ -91,23 +95,22 @@ export default class extends React.Component {
               value={this.state.email}
               onChange={this.changeHandler}
             />
-            <ButtonContainer
+            <Button
               type='submit'
-              width={'300px'}
-              height={'80px'}
-              textColor={'white'}
-              backgroundColor={'#6eead0'}
-              fontSize={'1.6rem'}
-              fontWeight={'700'}
-              hoverBackgroundColor={'#6eead000'}
-              hoverBorder={'2px solid white'}
-              hoverTextColor={'white'}
-              m600width={'100%'}
-              m600height={'66px'}
-              m600fontSize={'1.3rem'}
+              width='300px'
+              height='60px'
+              textColor='white'
+              background='green'
+              fontSize='1.3rem'
+              fontWeight='700'
+              hoverScale
+              m960width='95%'
+              m960margin='10px 0 0 0'
+              m960height='50px'
+              m960fontSize='1rem'
             >
               SUBSCRIBE
-            </ButtonContainer>
+            </Button>
           </form>
         </div>
         {this.state.successMessage ? (

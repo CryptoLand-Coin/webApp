@@ -11,6 +11,8 @@ function SectionThree() {
         buttonLink={'rewards'}
         buttonName={'THE REWARDS'}
         buttonColor={'green'}
+        buttonTextColor={'white'}
+        textColor={'#3a3a3a'}
         align={'left'}
       >
         <p>not only as a traditional crypto-investment, but with monthly airdrops for holding the coin, using the app, interacting with brands, and being a part of the CryptoLand community.</p>

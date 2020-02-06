@@ -10,24 +10,56 @@ function CryptoProgress(props) {
   return (
     <CryptoProgressContainer>
       <div className="progress-container">
+
         <div className="purchaseHeader">
+
           <p>{props.width < 620 ? 'Purchase with:' : 'Purchase CRYPTO with:'}</p>
-          <div>
-            <img src="/assets/images/USD.png" alt='USD currency logo' />
-            <p>USD</p>
+
+          <div className='currency-container'>
+
+            <div className='currency-row'>
+
+              <div>
+                <img src="/assets/images/USD.png" alt='USD currency logo' />
+                <p>USD</p>
+              </div>
+              <div>
+                <img src="/assets/images/BTC.png" alt='BTC currency logo'/>
+                <p>BTC</p>
+              </div>
+              <div>
+                <img src="/assets/images/ETH.png" alt='ETH currency logo'/>
+                <p>ETH</p>
+              </div>
+              <div>
+                <img src="/assets/images/LTC.png" alt='LTC currency logo'/>
+                <p>LTC</p>
+              </div>
+
+            </div>
+
+            <div className='currency-row'>
+
+              <div>
+                <img src="/assets/images/XRP.png" alt='XRP currency logo' />
+                <p>XRP</p>
+              </div>
+              <div>
+                <img src="/assets/images/EOS.png" alt='EOS currency logo'/>
+                <p>EOS</p>
+              </div>
+              <div>
+                <img src="/assets/images/DASH.png" alt='DASH currency logo'/>
+                <p>DASH</p>
+              </div>
+              <div>
+                <p>More...</p>
+              </div>
+
+            </div>
+
           </div>
-          <div>
-            <img src="/assets/images/BTC.png" alt='BTC currency logo'/>
-            <p>BTC</p>
-          </div>
-          <div>
-            <img src="/assets/images/ETH.png" alt='ETH currency logo'/>
-            <p>ETH</p>
-          </div>
-          <div>
-            <img src="/assets/images/LTC.png" alt='LTC currency logo'/>
-            <p>LTC</p>
-          </div>
+
         </div>
 
         <h1>ICO ends in</h1>

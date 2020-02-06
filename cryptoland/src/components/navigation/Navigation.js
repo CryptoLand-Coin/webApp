@@ -22,8 +22,7 @@ import {
 class Navigation extends Component {
   state={
     menuOpen: false,
-    isInHero: true,
-    previousAccordionId: null
+    isInHero: true
   }
 
   componentDidMount() {
@@ -57,7 +56,7 @@ class Navigation extends Component {
     const heroHeight = document.querySelector('#hero').clientHeight;
     const tickerHeight = document.querySelector('#ticker').clientHeight;
 
-    if(this.props.width > 960) {
+    if(this.props.width > 1200) {
       navbarHeight = document.querySelector('#navbar').clientHeight;
     } else {
       navbarHeight = document.querySelector('#mobileNavbar').clientHeight;
@@ -87,7 +86,7 @@ class Navigation extends Component {
 
   render() {
     // Array of link titles
-    const menu = ['HOW IT WORKS','WHITE PAPER','CURRENCY','REWARDS', 'APP', 'FOUNDATION','LOGIN']
+    const menu = ['WHITE PAPER', 'HOW IT WORKS','CURRENCY','REWARDS', 'APP', 'FOUNDATION', 'TEAM','LOGIN']
 
     // Mapping out link items
     const menuItems = menu.map((item, i) => {
@@ -95,7 +94,7 @@ class Navigation extends Component {
       const itemArr = lowerItem.split(' ')
       const itemLink = itemArr.join('')
 
-      if(this.props.width <= 960) {
+      if(this.props.width <= 1200) {
         return (
             <MenuItem
               key={i}
@@ -116,25 +115,43 @@ class Navigation extends Component {
             </MenuItem>
           )
       } else {
-        return (
-          <Button
-            key={i}
-            noDecoration
-            noBackground
-            textColor={`${this.props.location.pathname === `/${itemLink}` ? '#55E2BE' : '#efefef'}`}
-            fontSize="0.925em"
-            fontWeight="900"
-            letterSpacing="1.5px"
-          >
-            <Link to={`/${itemLink}`} >{item}</Link>
-          </Button>
-        )
+          if(item !== 'LOGIN') {
+            return (
+              <Button
+                key={i}
+                noDecoration
+                noBackground
+                textColor={`${this.props.location.pathname === `/${itemLink}` ? '#55E2BE' : '#efefef'}`}
+                fontSize="0.925em"
+                fontWeight="900"
+                letterSpacing="1.5px"
+                margin='0 10px 0 0'
+              >
+                <Link to={`/${itemLink}`} >{item}</Link>
+              </Button>
+            )
+          } else {
+            return (
+              <Button
+                onClick={() => window.open("https://cryptoland.icoadm.in/?referral=<referral>")}
+                noBackground
+                border='2px solid #00eb9a'
+                pPadding='10% 5%'
+                textColor="white"
+                fontSize=".9em"
+                fontWeight="900"
+                letterSpacing="1.5px"
+              >
+                <p>{item}</p>
+              </Button>
+            )
+          }
       }
     })
 
     return (
       <>
-        {this.props.width <= 960 ? (
+        {this.props.width <= 1200 ? (
           <>
             <HamburgerMenuContainer
               id='mobileNavbar'
@@ -171,30 +188,14 @@ class Navigation extends Component {
             id='navbar'
             isInHero={this.state.isInHero}
           >
-            <img style={{
-                cursor: 'pointer'
-            }}
-            onClick={() => {
-              this.props.history.push('/')
-            }}
-            src='./assets/images/Cryptoland_Logo_Green_Icon.png'
-            alt='Cryptoland logo'
+            <img
+              style={{cursor: 'pointer'}}
+              onClick={() => this.props.history.push('/')}
+              src='./assets/images/Cryptoland_Logo_Green_Icon.png'
+              alt='Cryptoland logo'
             />
-
             <div>
               {menuItems}
-
-              <Button
-                text="LOGIN"
-                onClick={() => window.open("https://cryptoland.icoadm.in/?referral=<referral>")}
-                background="linear-gradient(to right, #6BDFC7 0%, #00EB9A 100%);}"
-                pPadding='10% 5%'
-                textColor="white"
-                fontSize=".9em"
-                fontWeight="900"
-                letterSpacing="1.5px"
-               />
-
             </div>
           </NavigationContainer>
         )}

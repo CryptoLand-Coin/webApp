@@ -7,15 +7,20 @@ export const ButtonContainer = styled.button`
   padding: ${props => props.padding};
   color: ${props => props.textColor};
   background-color: ${props => props.backgroundColor};
-  background: ${props => props.noBackground ? "none" : props.background};
-  border: none;
+  background: ${props => props.noBackground ? "none" : props.background === 'green' ? '-webkit-linear-gradient(left,#00eb9a 0%, #6bdfc7 80%)' : props.background};
+  border: ${props => props.border ? props.border : 'none'}
   border-radius: 3px;
   font-size: ${props => props.fontSize};
   font-weight: ${props => props.fontWeight};
   cursor: pointer;
   transition: all .3s ease;
   outline: none;
-  letter-spacing: ${props => props.letterSpacing}
+  letter-spacing: ${props => props.letterSpacing};
+
+  /* landing page hover effect */
+  &:hover {
+    transform: scale(${props => props.hoverScale ? '1.05' : '1'});
+  }
 
   p {
     padding: ${props => props.pPadding}
@@ -24,6 +29,9 @@ export const ButtonContainer = styled.button`
   a {
     text-decoration: ${props => props.noDecoration && "none"};
     color: ${props => props.textColor};
+    background: ${props => props.textGradient ? '-webkit-linear-gradient(left,#00eb9a, #6bdfc7)' : 'none'};
+    -webkit-background-clip: ${props => props.textGradient ? 'text' : 'none'};
+    -webkit-text-fill-color: ${props => props.textGradient ? 'transparent' : 'none'};
     font-size: ${props => props.fontSize};
     font-weight: ${props => props.fontWeight};
 
@@ -32,13 +40,6 @@ export const ButtonContainer = styled.button`
       font-size: ${props => props.fontSize};
       font-weight: ${props => props.fontWeight};
     }
-  }
-
-  :hover {
-    /* transform: scale(1.05); */
-    background-color: ${props => props.hoverBackgroundColor};
-    border: ${props => props.hoverBorder};
-    color: ${props => props.hoverTextColor};
   }
 
   @media (max-width: 960px) {
@@ -62,5 +63,12 @@ export const ButtonContainer = styled.button`
     margin: ${props => props.m400margin};
     padding: ${props => props.m400padding};
     font-size: ${props => props.m400fontSize};
+  }
+
+  :hover {
+    /* transform: scale(1.05); */
+    background-color: ${props => props.hoverBackgroundColor};
+    border: ${props => props.hoverBorder};
+    color: ${props => props.hoverTextColor};
   }
 `

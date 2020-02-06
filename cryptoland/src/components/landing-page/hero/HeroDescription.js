@@ -30,19 +30,19 @@ function HeroDescription() {
             </div>
           </ul>
           <Button
+           width='75%'
            noDecoration
            fontSize="1em"
            fontWeight="900"
-           letterSpacing="1px"
-           textColor="#55E2BE"
-           width="45%"
-           padding="1.5% 0"
+           textGradient
+           hoverScale
+           padding="3% 0"
            margin="1.5% 0 0 0"
            backgroundColor="white"
+           m960width='100%'
+           m960margin="20px 0 0 0"
           >
-              <Link to={'/whitepaper'}>
-                  <p>WHITE PAPER</p>
-              </Link>
+              <Link to={'/whitepaper'}>WHITE PAPER</Link>
           </Button>
       </div>
     </HeroDescriptionContainer>

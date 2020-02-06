@@ -29,6 +29,9 @@ import {
   CryptoProgressContainer
 } from './landing-page/LandingPage'
 
+// Section Boxes
+import { SectionContainer } from './landing-page/section-boxes/SectionBox'
+
 // Email Sub
 import { EmailSubscriberContainer } from './landing-page/EmailSubscriber'
 
@@ -76,6 +79,8 @@ export {
   LandingPageHero,
   HeroDescriptionContainer,
   CryptoProgressContainer,
+  // Section Boxes
+  SectionContainer,
   // Email Sub
   EmailSubscriberContainer,
 // ----------------------------------------------------

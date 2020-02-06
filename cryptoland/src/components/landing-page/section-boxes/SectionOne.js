@@ -11,6 +11,8 @@ function SectionOne() {
         buttonLink={'howitworks'}
         buttonName={'HOW IT WORKS'}
         buttonColor={'white'}
+        buttonTextColor={'green'}
+        textColor={'white'}
         align={'left'}
       >
         <p>CryptoLand couples a cutting-edge social platform coupled with a globally recognized, easy-to-use coin.</p>

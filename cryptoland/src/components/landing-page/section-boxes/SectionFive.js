@@ -11,6 +11,8 @@ function SectionFive() {
         buttonLink={'foundation'}
         buttonName={'FOUNDATION'}
         buttonColor={'green'}
+        buttonTextColor={'white'}
+        textColor={'#3a3a3a'}
         give={true}
         align={'left'}
       >

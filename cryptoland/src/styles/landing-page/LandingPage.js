@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const LandingPageHero = styled.div`
-  background: url(/assets/Background_Image.png);
+  background: url(/assets/images/Hero_BG.png);
   height: 100%;
   width: 100%;
   padding: 150px 0 50px 0;
@@ -167,7 +167,7 @@ export const CryptoProgressContainer = styled.div`
         }
 
         @media (max-width: 960px) {
-          width: 40%;
+          width: 10%;
         }
 
         @media (max-width: 550px) {
@@ -175,21 +175,45 @@ export const CryptoProgressContainer = styled.div`
         }
       }
 
-      div {
+      .currency-container {
+        width: 80%;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
 
-        p {
-          font-size: 0.75em;
-          padding-left: 10%;
+        @media (max-width: 800px) {
+          width: 100%;
         }
 
-        img {
-          width: 25%;
-          height: auto;
-        }
+        .currency-row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
 
+          div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 1% 0 0 10%;
+
+            p {
+              font-size: 0.75em;
+              padding-left: 10%;
+
+              @media (max-width: 500px) {
+                font-size: 0.6em;
+              }
+            }
+
+            img {
+              width: 20px;
+              height: auto;
+
+              @media (max-width: 500px) {
+                width: 12px;
+              }
+            }
+          }
+        }
       }
     }
 

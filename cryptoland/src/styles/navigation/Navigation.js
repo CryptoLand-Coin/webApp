@@ -20,9 +20,9 @@ export const NavigationContainer = styled.div`
     }
 
     div {
-        width: 48.5%;
-        justify-content: space-between;
+        width: 75%;
         display: flex;
+        justify-content: flex-end;
         margin-right: 4%;
     }
 `

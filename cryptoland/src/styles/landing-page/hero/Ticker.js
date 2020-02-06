@@ -17,7 +17,7 @@ export const TickerContainer = styled.div`
     background-color: #020202;
     font-size: .8em;
     align-items: center;
-    margin-top: ${props => props.width > 960 ? '100px' : '75px'};
+    margin-top: ${props => props.width > 1200 ? '100px' : '75px'};
     position: fixed;
     padding: 0.7% 0;
     /* box-shadow: 0px 0px 29px 0px rgba(63,235,154,.25); */

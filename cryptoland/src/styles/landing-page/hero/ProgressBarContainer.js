@@ -28,7 +28,7 @@ export const ProgressBarContainer = styled.div`
             width: ${props => props.percentageRemaining  ? props.percentageRemaining : '100%'};
         }
     }
-    
+
 
     .staticBar {
         height: 1vh;
@@ -40,14 +40,14 @@ export const ProgressBarContainer = styled.div`
         width: 83%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     font-size: 0.7em;
     margin: 1% 0 2% 0;
 
     .sftext {
         color: grey;
     }
-    
+
     h1 {
         margin: 0;
     }
@@ -62,12 +62,20 @@ export const ProgressBarContainer = styled.div`
             }
 
             h1 {
-                margin: 0;
+                margin: 0 2px;
+
+                @media (max-width: 500px) {
+                  font-size: .6em;
+                }
             }
 
             img {
-                width: 11%;
+                width: 20px;
                 height: auto;
+
+                @media (max-width: 500px) {
+                  width: 12px;
+                }
             }
         }
     }
