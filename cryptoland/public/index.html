@@ -49,6 +49,14 @@
           date.setMonth(date.getMonth() + 3);
           document.cookie = 'referral_user_id=' + encodeURIComponent(referral) + ";path=/;expires=" + date.toGMTString() + ";domain=." + location.host;
         }
+        window.goToDashboard = function() {
+          var referral = document.cookie.replace(/(?:(?:^|.*;\s*)referral_user_id\s*\=\s*([^;]*).*$)|^.*$/, "$1"),
+              url = 'https://cryptoland.icoadm.in/';
+          if (referral) {
+            url += '?referral=' + referral;
+          }
+          window.open(url);
+        };
       })();
     </script>
   </head>
