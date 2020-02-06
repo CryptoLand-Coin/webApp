@@ -19,7 +19,6 @@ export const ProgressBarContainer = styled.div`
         height: auto;
         width: 83%;
         display: flex;
-        justify-content: flex-end;
 
         .overlayProgressBar {
             height: 3.2vh;
@@ -37,36 +36,52 @@ export const ProgressBarContainer = styled.div`
     }
 
     .startfinish {
-        width: 83%;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    font-size: 0.7em;
-    margin: 1% 0 2% 0;
+      width: 83%;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.7em;
+      margin: 0 0 2% 0;
 
     .sftext {
         color: grey;
     }
 
     h1 {
-        margin: 0;
+        margin: 20px 0 !important;
     }
 
         .coincount {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: flex-start;
             align-items: center;
+            font-size: 1rem;
 
-            .count {
-                padding: 0 2%;
+            @media (max-width: 500px) {
+              font-size: .8rem;
             }
 
-            h1 {
-                margin: 0 2px;
+            div {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              .count {
+                  padding: 0 0 0 5px;
+              }
 
-                @media (max-width: 500px) {
-                  font-size: .6em;
-                }
+              h1 {
+                  margin: 2px 0 2px 2px !important;
+              }
+            }
+
+            .capital {
+              margin: 5px 0 0 0 !important;
+              font-size: 1rem;
+
+              @media (max-width: 500px) {
+                font-size: .8rem;
+              }
             }
 
             img {
@@ -74,7 +89,7 @@ export const ProgressBarContainer = styled.div`
                 height: auto;
 
                 @media (max-width: 500px) {
-                  width: 12px;
+                  width: 17px;
                 }
             }
         }

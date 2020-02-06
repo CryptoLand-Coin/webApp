@@ -43,15 +43,19 @@ export const HeroDescriptionContainer = styled.div`
   }
 
   .interiorContainer {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     padding: 0 5%;
 
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+
     h1 {
-      font-size: 2em;
+      font-size: 2.5rem;
       font-weight: 700;
-      line-height: 1.1em;
+      margin-bottom: 10px;
 
       @media (max-width: 1280px) {
         font-size: 1.9em;
@@ -59,18 +63,15 @@ export const HeroDescriptionContainer = styled.div`
     }
 
     p {
-      font-size: 1em;
-      margin-top: 0.6em;
+      font-size: 1.3rem;
+      margin-bottom: 15px;
       font-weight: 400;
-      letter-spacing: 1px;
-      line-height: 1.5em;
+      line-height: 2;
     }
 
     strong {
-      font-size: 1em;
+      font-size: 1.3rem;
       font-weight: 900;
-      letter-spacing: 1px;
-      line-height: 1.5em;
     }
 
     ul {

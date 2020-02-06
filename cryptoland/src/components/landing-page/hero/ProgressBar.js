@@ -25,9 +25,11 @@ function ProgressBar() {
             <div className="startfinish">
                 <h1 className="sftext">START</h1>
                 <div className="coincount">
-                    <img src="assets/images/USD.png" alt='USD curreny logo'/>
-                    <h1 className="count">{funds.toLocaleString()}</h1>
-                    <h1>Capital Raised</h1>
+                    <div>
+                      <img src="assets/images/USD.png" alt='USD curreny logo'/>
+                      <h1 className="count">{funds.toLocaleString()}</h1>
+                    </div>
+                    <h1 className='capital'>Capital Raised</h1>
                 </div>
                 <h1 className="sftext">FINISH</h1>
             </div>

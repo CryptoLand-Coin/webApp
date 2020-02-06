@@ -71,6 +71,10 @@ export const SectionContainer = styled.div`
       flex-direction: row;
       align-items: center;
 
+      @media (max-width: 500px) {
+        justify-content: space-between;
+      }
+
       a {
 
         @media (max-width: 960px) {

@@ -12,7 +12,10 @@ function HeroDescription() {
           <h1>Smarter, faster, intuitive cryptocurrency
             designed for every-day use. </h1>
           <p>
-          A thriving decentralized global currency coupled with a revolutionary social platform. In CryptoLand, members interact with content they love.
+            A thriving decentralized global currency coupled with a revolutionary social platform.
+          </p>
+          <p>
+            In CryptoLand, members interact with content they love.
           </p>
           <strong>Then they get paid for it.</strong>
           <ul>
