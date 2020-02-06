@@ -6,7 +6,7 @@ function Button(props) {
        <ButtonContainer
         {...props}
        >
-           <p>{props.text}</p>
+           {props.children}
        </ButtonContainer>
    )
 }
