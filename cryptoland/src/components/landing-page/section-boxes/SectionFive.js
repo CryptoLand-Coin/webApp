@@ -7,7 +7,7 @@ function SectionFive() {
       <SectionBox
         backgroundImage={'/assets/images/foundation.png'}
         title={'Our goal is to give'}
-        subTitle={'and we do it in more ways than one.'}
+        subTitle={'And we do it in more ways than one.'}
         buttonLink={'foundation'}
         buttonName={'FOUNDATION'}
         buttonColor={'green'}
@@ -16,8 +16,8 @@ function SectionFive() {
         give={true}
         align={'left'}
       >
-        <p>CryptoLand is determined to empower the positive aspects of business, whilehelping solve widespread issues throughout the world.</p>
-        <p>Our charitable program places us in a position to give, powerfully and meaningfully, to help resolve issues our community members care deeply about.</p>
+        <p>CryptoLand is determined to empower the positive aspects of business while helping solve widespread issues throughout the world.</p>
+        <p>Our charitable program places us in a position to give, and to help resolve issues our community members care deeply about in a powerful and meaningful way.</p>
       </SectionBox>
     </>
   );

@@ -7,7 +7,7 @@ function SectionFour() {
       <SectionBox
         backgroundImage={'/assets/images/the_app.png'}
         title={'Tie your money to your lifestyle'}
-        subTitle={'with theCryptoLand App.'}
+        subTitle={'With theCryptoLand App.'}
         buttonLink={'app'}
         buttonName={'THE APP'}
         buttonColor={'white'}

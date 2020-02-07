@@ -55,6 +55,7 @@ export const SectionContainer = styled.div`
     .box-body {
       width: 100%;
       padding-top: 50px;
+      line-height: 2;
 
       p {
         margin-bottom: 50px;
