@@ -7,7 +7,7 @@ export const EmailSubscriberContainer = styled.div`
     justify-content: center;
     color: white;
     text-align: center;
-    padding: 50px 0;
+    padding: 50px 20px;
 
     h1 {
         font-size: 2rem;
@@ -51,28 +51,25 @@ export const EmailSubscriberContainer = styled.div`
         }
 
         input {
-            height: 60px;
+            /* height: 60px; */
             width: 40%;
             border: none;
             margin-right: 2%;
-            font-size: 1.6rem;
-            padding-left: 20px;
+            font-size: 1.2rem;
+            padding: 10px 0 10px 20px;
             outline: none;
 
             @media (max-width: 960px) {
-              padding-left: 5%;
-              width: 90%;
-              height: 50px;
-              font-size: .8rem;
+              width: 85%;
+              font-size: 1rem;
               margin: 0;
             }
         }
 
         input::placeholder {
-            font-size: 1.6rem;
+            font-size: 1.2rem;
 
             @media (max-width: 960px) {
-              height: 60px;
               font-size: .8rem;
             }
         }
