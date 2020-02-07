@@ -6,7 +6,7 @@ import { ViewsContentContainer } from '../../styles'
 function ViewsContent(props) {
 
   return(
-    <ViewsContentContainer width={props.width}>
+    <ViewsContentContainer width={props.width} whitepaper={props.whitepaper}>
       {props.children}
     </ViewsContentContainer>
   )
