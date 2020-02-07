@@ -84,7 +84,7 @@ export default class extends React.Component {
     return (
       <EmailSubscriberContainer>
         <h1>Stay Informed</h1>
-        <p>Subscribe to our newsletter and we will periodically send you updates and info about Cryptoland</p>
+        <p>Subscribe to our newsletter and we will periodically send you updates and info about CryptoLand</p>
         <div>
           <form action="https://script.google.com/macros/s/AKfycbxZgUaIsyQOjKLCTGfQpJrwGAjIsdGQIScflZxdwkLhDksxp54/exec" method="post">
             <input

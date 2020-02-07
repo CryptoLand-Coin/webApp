@@ -20,7 +20,6 @@ export const FooterContainer = styled.div`
         padding: 2% 0;
         width: 100%;
         text-align: center;
-        border-top: 1px solid white;
 
         @media (max-width: 500px) {
             font-size: 0.8em

@@ -55,6 +55,7 @@ export const SectionContainer = styled.div`
     .box-body {
       width: 100%;
       padding-top: 50px;
+      line-height: 2;
 
       p {
         margin-bottom: 50px;
@@ -70,6 +71,10 @@ export const SectionContainer = styled.div`
       display: flex;
       flex-direction: row;
       align-items: center;
+
+      @media (max-width: 500px) {
+        justify-content: space-between;
+      }
 
       a {
 

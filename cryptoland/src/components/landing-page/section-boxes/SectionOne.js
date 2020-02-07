@@ -15,7 +15,7 @@ function SectionOne() {
         textColor={'white'}
         align={'left'}
       >
-        <p>CryptoLand couples a cutting-edge social platform coupled with a globally recognized, easy-to-use coin.</p>
+        <p>CryptoLand couples a cutting-edge social platform with a globally recognized, easy-to-use coin.</p>
         <p>We provide our community members and coin holders an environment to grow their financial assets without hindering their ability to spend them. </p>
       </SectionBox>
     </>
