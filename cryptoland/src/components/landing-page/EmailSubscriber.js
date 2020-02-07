@@ -97,16 +97,15 @@ export default class extends React.Component {
             />
             <Button
               type='submit'
-              width='300px'
-              height='60px'
+              padding='10px 100px'
               textColor='white'
               background='green'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
               fontWeight='700'
               hoverScale
-              m960width='95%'
+              m960width='90%'
+              m960padding='10px 0'
               m960margin='10px 0 0 0'
-              m960height='50px'
               m960fontSize='1rem'
             >
               SUBSCRIBE
