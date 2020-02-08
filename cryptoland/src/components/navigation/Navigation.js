@@ -95,6 +95,7 @@ class Navigation extends Component {
       const itemLink = itemArr.join('')
 
       if(this.props.width <= 1200) {
+        {/* --- Mobile menu --- */}
         return (
             <MenuItem
               key={i}
