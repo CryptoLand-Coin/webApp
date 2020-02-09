@@ -1,7 +1,7 @@
 import React from 'react';
 // import axios from 'axios';
 
-import { ButtonContainer, EmailSubscriberContainer } from '../../styles';
+import { EmailSubscriberContainer } from '../../styles';
 
 import {
   Button

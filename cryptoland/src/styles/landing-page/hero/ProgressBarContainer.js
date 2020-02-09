@@ -19,12 +19,14 @@ export const ProgressBarContainer = styled.div`
         height: auto;
         width: 83%;
         display: flex;
+        transform: translate(0,-3.1vh);
+        overflow-x: hidden;
 
         .overlayProgressBar {
             height: 3.2vh;
-            transform: translate(0, -3.1vh);
+            transform: translate(${props => props.percentageRemaining  ? `${props.percentageRemaining}, 0` : '0%, 0'});
             background-color: black;
-            width: ${props => props.percentageRemaining  ? props.percentageRemaining : '100%'};
+            width: 100%;
         }
     }
 
