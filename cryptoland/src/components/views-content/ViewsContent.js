@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux';
 
 import { ViewsContentContainer } from '../../styles'
 
-function ViewsContent(props) {
+class ViewsContent extends Component {
 
-  return(
-    <ViewsContentContainer width={props.width} whitepaper={props.whitepaper}>
-      {props.children}
-    </ViewsContentContainer>
-  )
+  componentDidMount() {
+    window.scroll({ top: 0, behavior: 'smooth' })
+  }
+
+  render() {
+    return(
+      <ViewsContentContainer
+        width={this.props.width}
+        whitepaper={this.props.whitepaper}
+      >
+        {this.props.children}
+      </ViewsContentContainer>
+    )
+  }
 }
 
 const mapStateToProps = state => ({
