@@ -95,7 +95,7 @@ class Navigation extends Component {
       const itemLink = itemArr.join('')
 
       if(this.props.width <= 1200) {
-        {/* --- Mobile menu --- */}
+        // --- Mobile menu ---
         return (
             <MenuItem
               key={i}
@@ -134,6 +134,7 @@ class Navigation extends Component {
           } else {
             return (
               <Button
+                key={i}
                 onClick={() => window.open("https://cryptoland.icoadm.in/?referral=<referral>")}
                 noBackground
                 border='2px solid #00eb9a'
