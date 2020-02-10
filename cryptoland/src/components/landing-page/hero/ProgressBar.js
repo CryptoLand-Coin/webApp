@@ -11,16 +11,16 @@ class ProgressBar extends Component {
   }
 
   async componentDidMount() {
-      let coinRes = await axios.get('https://cryptoland.icoadm.in/api/v1/app_info?key=99a4b63abc97857eaf1f92f31ebf07cd', {
-        headers: {
-          'Access-Control-Allow-Origin' : 'https://cryptolandico.com, https://cryptolandico.io, https://cryptoland.io',
-          'Vary' : 'Origin',
-        }
-      })
+      // let coinRes = await axios.get('https://cryptoland.icoadm.in/api/v1/app_info?key=99a4b63abc97857eaf1f92f31ebf07cd', {
+      //   headers: {
+      //     'Access-Control-Allow-Origin' : 'https://cryptolandico.com, https://cryptolandico.io, https://cryptoland.io',
+      //     'Vary' : 'Origin',
+      //   }
+      // })
 
-      console.log('coinRes: ',coinRes)
-
-      const funds = coinRes.ico_total_usd
+      // console.log('coinRes: ',coinRes)
+      //
+      // const funds = coinRes.ico_total_usd
 
       const today = moment()
       const endDate = moment("07/31/2020")
