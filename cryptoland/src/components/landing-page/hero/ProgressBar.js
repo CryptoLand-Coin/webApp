@@ -10,14 +10,15 @@ class ProgressBar extends Component {
     percent: ''
   }
 
-  componentDidMount() {
-      let coinRes = axios.get('https://cryptoland.icoadm.in/api/v1/app_info?key=99a4b63abc97857eaf1f92f31ebf07cd', {
+  async componentDidMount() {
+      let coinRes = await axios.get('https://cryptoland.icoadm.in/api/v1/app_info?key=99a4b63abc97857eaf1f92f31ebf07cd', {
         headers: {
-          'Access-Control-Allow-Origin' : 'https://cryptolandico.com', 'https://cryptolandico.io', 'https://cryptoland.io'
+          'Access-Control-Allow-Origin' : 'https://cryptolandico.com, https://cryptolandico.io, https://cryptoland.io',
+          'Vary' : 'Origin',
         }
       })
 
-      console.log(coinRes)
+      console.log('coinRes: ',coinRes)
 
       const funds = coinRes.ico_total_usd
 
