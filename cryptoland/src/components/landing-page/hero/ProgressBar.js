@@ -11,24 +11,26 @@ class ProgressBar extends Component {
   }
 
   async componentDidMount() {
-      // let coinRes = await axios.get('https://cryptoland.icoadm.in/api/v1/app_info?key=99a4b63abc97857eaf1f92f31ebf07cd', {
-      //   headers: {
-      //     'Access-Control-Allow-Origin' : 'https://cryptolandico.com, https://cryptolandico.io, https://cryptoland.io',
-      //     'Vary' : 'Origin',
-      //   }
-      // })
+    try {
+      let coinRes = await axios.get('https://cryptoland.icoadm.in/api/v1/app_info?key=99a4b63abc97857eaf1f92f31ebf07cd', {
+        headers: {
+          'Access-Control-Allow-Origin' : 'https://cryptolandico.com, https://cryptolandico.io, https://cryptoland.io',
+          'Vary' : 'Origin',
+        }
+      })
 
-      // console.log('coinRes: ',coinRes)
-      //
-      // const funds = coinRes.ico_total_usd
+      const funds = coinRes.data.ico_total_usd
 
       const today = moment()
       const endDate = moment("07/31/2020")
 
       this.setState({
-        // funds: funds,
+        funds: funds,
         percent: `${Math.floor((1 - (endDate.diff(today, 'days')/188)) * 100)}%`
       })
+    } catch(err) {
+
+    }
 
   }
 
@@ -51,7 +53,6 @@ class ProgressBar extends Component {
                    <div className="coincount">
                        <div>
                          <img src="assets/images/USD.png" alt='USD curreny logo'/>
-                         {/*<h1 className="count">{this.state.funds.toLocaleString()}</h1>*/}
                          <h1 className="count">{this.state.funds.toLocaleString()}</h1>
                        </div>
                        <h1 className='capital'>Capital Raised</h1>
