@@ -11,7 +11,7 @@ function Team() {
       </div>
 
       <div className='page-body'>
-        <p>Comming Soon...</p>
+        <p>Coming Soon...</p>
       </div>
     </ViewsContent>
   )
