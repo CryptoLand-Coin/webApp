@@ -11,11 +11,11 @@ function Foundation() {
       </div>
 
       <div className='page-body'>
-        <p>Serving people in a wide-spread capacity is a mission-critical portion of the Cryptoland project. Our global effort to impact positive change transcends our relationship with any one brand. The CrypotLand Foundation will place a focus on philanthropic efforts to positively impact communities and countriesaround the glove. Cryptoland looks to aid in the betterment of communities, targeting issues that hinder prosperity.</p>
+        <p>Serving people in a wide-spread capacity is the critical mission of CryptoLand. Our global effort to impact positive change transcends our relationship with any one brand. The CryptoLand Foundation will place a focus on philanthropic efforts to positively impact communities and countriesaround the globe. CryptoLand looks to aid in the betterment of communities by targeting issues that hinder prosperity.</p>
 
-        <p>The Cryptoland Foundation is determined to empower the positive aspects ofbusiness, while assisting in the resolution of widespread issues that plague the world as a whole. It is our mission to establish an environment that gives powerfully and meaningfully toward all issues that hinder their consumer’s communities.</p>
+        <p>The CryptoLand Foundation is determined to empower the positive aspects of business, while assisting in resolving of widespread issues that plague the world as a whole. Its mission is to establish an environment that gives attention to all issues that hinder our communities.</p>
 
-        <p>This non-profit portion of our business serves as a key pillar to benefit the world in ways that transcend personal wealth, and benefit people from all walks of life.</p>
+        <p>This non-profit portion of CryptoLand serves as a key pillar in benefiting the world as a whole and serve people from all walks of life.</p>
       </div>
     </ViewsContent>
   )
