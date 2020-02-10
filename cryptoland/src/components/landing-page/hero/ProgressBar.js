@@ -6,7 +6,7 @@ import { ProgressBarContainer } from '../../../styles'
 
 class ProgressBar extends Component {
   state = {
-    funds: 153487.39,
+    funds: 0,
     percent: ''
   }
 
@@ -19,7 +19,7 @@ class ProgressBar extends Component {
         }
       })
 
-      const funds = coinRes.data.ico_total_usd
+      const funds = parseFloat(coinRes.data.ico_total_usd)
 
       const today = moment()
       const endDate = moment("07/31/2020")
