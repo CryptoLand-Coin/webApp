@@ -15,7 +15,7 @@ function SectionTwo() {
         textColor={'#3a3a3a'}
         align={'right'}
       >
-        <p>[CRYPTO] is a revolutionary utility token that has global utility, lighting fast transaction speed and a growing value.</p>
+        <p>[CRYPTO] is a revolutionary utility token that has global utility, lightning fast transaction speed and a growing value.</p>
         <p>Benefiting both merchant and consumer, [CRYPTO] connects audiences and brands in ways never before possible.</p>
       </SectionBox>
     </>
