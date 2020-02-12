@@ -11,7 +11,7 @@ function Footer() {
                 <a href='/termsandconditions' >Terms & Conditions</a>
             </div>
 
-            <p>All rights reserverd. Copyright © CryptoLand 2020</p>
+            <p>All rights reserved. Copyright © CryptoLand 2020</p>
         </FooterContainer>
     )
 }
