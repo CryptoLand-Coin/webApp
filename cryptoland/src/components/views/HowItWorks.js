@@ -11,7 +11,7 @@ function HowItWorks() {
       </div>
 
       <div className='page-body'>
-        <p>CryptoLand: Providing the world an experience that goes beyond the traditional framework networking and consumer interaction. CryptoLand is designed not only to empower and connect brands and individuals, but provide a tangible vessel to create and sustain long-term financial growth and security.</p>
+        <p>CryptoLand: Providing the world an experience that goes beyond the traditional framework of networking and consumer interaction. CryptoLand is designed not only to empower and connect brands and individuals, but provide a tangible vessel to create and sustain long-term financial growth and security.</p>
 
         <p>CryptoLand’s native application creates a global, synergistic environment for individuals to interact with the content they love, share their experiences with fellow consumers, and fortify CRYPTO earnings while they do it. Harnessing the known power of traditional networking, our platform transcends beyond the benefits involved with simply forming new connections. It provides community members real, monetary incentives for their engagement.</p>
 
