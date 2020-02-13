@@ -67,7 +67,7 @@ function CryptoProgress(props) {
         <ICOtimer />
 
         <Button
-          onClick={()=>window.open("https://cryptoland.icoadm.in/?referral=<referral>")}
+          onClick={() => window.goToDashboard()}
           background="linear-gradient(to right, #6BDFC7 0%, #00EB9A 100%);}"
           width='84%'
           padding='10px 0'

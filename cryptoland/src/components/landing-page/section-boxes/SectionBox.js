@@ -39,7 +39,7 @@ class SectionBox extends Component {
               noDecoration
               hoverScale
             >
-              <a href='https://cryptoland.icoadm.in/?referral=<referral>' >{this.props.give ? 'GIVE' : 'BUY'}</a>
+              <a onClick={() => window.goToDashboard()} >{this.props.give ? 'GIVE' : 'BUY'}</a>
             </Button>
             <Button
               margin='0 10px 0 0'
