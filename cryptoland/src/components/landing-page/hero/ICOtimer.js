@@ -13,7 +13,6 @@ class ICOtimer extends Component {
   }
 
   componentDidMount() {
-    console.log(this.state, moment())
     this.calculateTime()
     this.countDown()
   }
