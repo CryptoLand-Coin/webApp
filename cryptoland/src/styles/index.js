@@ -48,6 +48,9 @@ import {
 // Views Content
 import { ViewsContentContainer } from './views/views-content/ViewsContent'
 
+// Views Team Members box
+import { MemberBoxContainer } from './views/the-team/MemberBox'
+
 // ----------------------------------------------------
 // Footer
 import {
@@ -94,6 +97,8 @@ export {
   FaqQAContainer,
   // Views Content
   ViewsContentContainer,
+  // Views Team Members box
+  MemberBoxContainer,
 // ----------------------------------------------------
   // Footer
   FooterContainer,
