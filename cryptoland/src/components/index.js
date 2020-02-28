@@ -38,8 +38,9 @@ import Button from './Buttons/Button'
 import NoMatch from './errors/NoMatch'
 
 // -------------------------------------------------------------
-// Site Views
+// Site Views Container Components
 import ViewsContent from './views-content/ViewsContent'
+import MemberBox from './the-team/MemberBox'
 
 // -------------------------------------------------------------
 // Site Views
@@ -49,7 +50,13 @@ import Currency from './views/Currency'
 import Rewards from './views/Rewards'
 import TheApp from './views/TheApp'
 import Foundation from './views/Foundation'
+// ---------
+// The team
 import Team from './views/Team'
+// ---------
+// The Members of team
+import CoreyChadwick from './the-team/CoreyChadwick'
+// ---------
 import PrivacyPolicy from './views/PrivacyPolicy'
 import TermsAndConditions from './views/TermsAndConditions'
 import Faqs from './views/Faqs'
@@ -95,8 +102,9 @@ export {
   // Error Views
   NoMatch,
   // -------------------------------------------------------------
-  // Site Views
+  // Site Views Container Components
   ViewsContent,
+  MemberBox,
   // -------------------------------------------------------------
   // Site Views
   WhitePaper,
@@ -105,7 +113,13 @@ export {
   Rewards,
   TheApp,
   Foundation,
+  // ---------
+  // The team
   Team,
+  // ---------
+  // The Members of team
+  CoreyChadwick,
+  // ---------
   PrivacyPolicy,
   TermsAndConditions,
   Faqs,

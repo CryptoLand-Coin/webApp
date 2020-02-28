@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ViewsContent } from '../../components'
+import { ViewsContent, CoreyChadwick } from '../../components'
 
 function Team() {
 
@@ -11,7 +11,7 @@ function Team() {
       </div>
 
       <div className='page-body'>
-        <p>Coming Soon...</p>
+        <CoreyChadwick />
       </div>
     </ViewsContent>
   )
