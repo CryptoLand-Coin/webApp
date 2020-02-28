@@ -3,15 +3,28 @@ import styled from 'styled-components'
 export const MemberBoxContainer = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   border-bottom: 1px solid #000000;
   width: 100%;
 
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+
   .member-image {
-    width: 15%;
+    width: 17.5%;
     padding-top: 20px;
 
+    @media (max-width: 960px) {
+      width: 100%;
+    }
+
     img {
-      width: 200px;
+      width: 100%;
+
+      @media (max-width: 960px) {
+        width: 60%;
+      }
     }
   }
 
@@ -19,7 +32,11 @@ export const MemberBoxContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 75%;
+    width: 77.5%;
+
+    @media (max-width: 960px) {
+      width: 100%;
+    }
 
     .member-name {
       margin-bottom: 50px;
