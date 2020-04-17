@@ -22,11 +22,11 @@ class ProgressBar extends Component {
       const funds = parseFloat(coinRes.data.ico_total_usd)
 
       const today = moment()
-      const endDate = moment("07/31/2020")
+      const endDate = moment("10/1/2020")
 
       this.setState({
         funds: funds,
-        percent: `${Math.floor((1 - (endDate.diff(today, 'days')/188)) * 100)}%`
+        percent: `${Math.floor((1 - (endDate.diff(today, 'days')/168)) * 100)}%`
       })
     } catch(err) {
 
