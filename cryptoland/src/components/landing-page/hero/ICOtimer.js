@@ -5,7 +5,7 @@ import { TimerContainer } from '../../../styles'
 
 class ICOtimer extends Component {
   state = {
-    endTime: moment(1596315600000),
+    endTime: moment(1601586000000),
     days: 0,
     hours: 0,
     minutes: 0,
