@@ -23,6 +23,13 @@ export const ButtonContainer = styled.button`
   }
 
   p {
+    text-decoration: ${props => props.noDecoration && "none"};
+    color: ${props => props.textColor};
+    background: ${props => props.textGradient ? '-webkit-linear-gradient(left,#00eb9a, #6bdfc7)' : 'none'};
+    -webkit-background-clip: ${props => props.textGradient ? 'text' : 'none'};
+    -webkit-text-fill-color: ${props => props.textGradient ? 'transparent' : 'none'};
+    font-size: ${props => props.fontSize};
+    font-weight: ${props => props.fontWeight};
     padding: ${props => props.pPadding}
   }
 

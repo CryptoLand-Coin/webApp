@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import { CryptoProgressContainer } from "../../../styles";
 
-import { ProgressBar, ICOtimer, Button } from "../../../components";
+import { ICOtimer, Button } from "../../../components";
 
 function CryptoProgress(props) {
 
@@ -71,7 +71,7 @@ function CryptoProgress(props) {
           background="linear-gradient(to right, #6BDFC7 0%, #00EB9A 100%);}"
           width='84%'
           padding='10px 0'
-          margin="4% 0 0 0"
+          margin="4% 0"
           textColor="white"
           fontSize="1em"
           fontWeight="900"
@@ -80,7 +80,7 @@ function CryptoProgress(props) {
           BUY CRYPTO
         </Button>
 
-        <ProgressBar />
+        {/* <ProgressBar /> */}
       </div>
     </CryptoProgressContainer>
   );

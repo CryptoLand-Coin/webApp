@@ -158,7 +158,7 @@ export const MenuItemContainer = styled.div`
     animation: 0.5s ${slideIn} forwards;
     animation-delay: ${props => props.delay};
 
-    a {
+    button {
       color: ${props => props.hover ? 'gray': '#efefef'};
       text-decoration: none;
     }

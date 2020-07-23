@@ -7,7 +7,7 @@ function MemberBox(props) {
   return(
     <MemberBoxContainer>
       <div className='member-image'>
-        <img src={props.memberImage} />
+        <img src={props.memberImage} alt='Team Member Pic' />
       </div>
 
       <div className='member-main'>

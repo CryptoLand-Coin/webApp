@@ -38,8 +38,9 @@ class SectionBox extends Component {
               fontWeight='700'
               noDecoration
               hoverScale
+              onClick={() => window.goToDashboard()}
             >
-              <a href='#' onClick={() => window.goToDashboard()} >{this.props.give ? 'GIVE' : 'BUY'}</a>
+              <p>{this.props.give ? 'GIVE' : 'BUY'}</p>
             </Button>
             <Button
               margin='0 10px 0 0'

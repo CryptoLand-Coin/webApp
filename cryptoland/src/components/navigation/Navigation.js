@@ -102,7 +102,7 @@ class Navigation extends Component {
               delay={`${i * 0.1}s`}
             >
               {item === 'LOGIN' ? (
-                <a href='#' onClick={() => window.goToDashboard()} >{item}</a>
+                <button onClick={() => window.goToDashboard()} >{item}</button>
               )
               : (
                 <Link
