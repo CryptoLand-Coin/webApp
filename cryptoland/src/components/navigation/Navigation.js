@@ -86,7 +86,7 @@ class Navigation extends Component {
 
   render() {
     // Array of link titles
-    const menu = ['WHITE PAPER', 'HOW IT WORKS','CURRENCY','REWARDS', 'APP', 'FOUNDATION', 'TEAM','LOGIN']
+    const menu = ['HOW IT WORKS','CURRENCY','REWARDS', 'APP', 'FOUNDATION', 'TEAM','LOGIN']
 
     // Mapping out link items
     const menuItems = menu.map((item, i) => {

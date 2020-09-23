@@ -8,7 +8,6 @@ import {
   LandingPage,
   NoMatch,
   Footer,
-  WhitePaper,
   HowItWorks,
   Currency,
   Rewards,
@@ -29,7 +28,7 @@ function App() {
 
       <Switch>
         <Route exact path='/' component={LandingPage} />
-        <Route path='/whitepaper' component={WhitePaper} />
+        {/*<Route path='/whitepaper' component={WhitePaper} />*/}
         <Route path='/howitworks' component={HowItWorks} />
         <Route path='/currency' component={Currency} />
         <Route path='/rewards' component={Rewards} />

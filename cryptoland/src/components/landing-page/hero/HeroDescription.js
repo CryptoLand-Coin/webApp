@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 import { HeroDescriptionContainer } from "../../../styles";
-import { Button } from "../../../components";
+// import { Button } from "../../../components";
 
 
 function HeroDescription() {
@@ -32,7 +32,7 @@ function HeroDescription() {
               <li>Capitalize on your data, while solidifying your financial future</li>
             </div>
           </ul>
-          <Button
+          {/*<Button
            width='75%'
            noDecoration
            fontSize="1em"
@@ -46,7 +46,7 @@ function HeroDescription() {
            m960margin="20px 0 0 0"
           >
               <Link to={'/whitepaper'}>WHITE PAPER</Link>
-          </Button>
+          </Button>*/}
       </div>
     </HeroDescriptionContainer>
   );
