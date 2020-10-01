@@ -15,13 +15,13 @@ ORG_OFFICIAL_EMAIL="corey@cryptoland.io"
 [[PRINCIPALS]]
 name="Corey Chadwick"
 email="corey@cryptoland.io"
-github="CryptoLand Coin"
+github="CryptoLand Token"
 
 [[CURRENCIES]]
 code="CRYPTO"
 issuer="GCBIJZQLTEVI6ZZYM4UH2LCUHNVNWUTZMQNOQTZWMOEAGDRWSWFDP2S3"
 display_decimals=2
-anchor_asset_type="crypto"
+anchor_asset_type="CRYPTO"
 anchor_asset="XLM"
 name="CRYPTOLAND"
 desc="CryptoLand"
