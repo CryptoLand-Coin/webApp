@@ -21,21 +21,20 @@ import {
 } from "./components";
 
 function App() {
-  const [images, setImages] = useState([
-    "Hero_BG.png",
-    "foundation.png",
-    "how_it_works.png",
-    "the_app.png",
-    "the_currency.png",
-    "the_rewards.png",
-  ]);
   const [appReady, setAppReady] = useState(false);
   const [fadeCompleted, setFadeCompleted] = useState(false);
 
   useEffect(() => {
+    const images = [
+      "Hero_BG.png",
+      "foundation.png",
+      "how_it_works.png",
+      "the_app.png",
+      "the_currency.png",
+      "the_rewards.png",
+    ]
     document.getElementById("root").classList.toggle("fade-root");
     document.getElementById("root").classList.toggle("fade-in");
-    console.log(appReady);
     function PreloadImage(src, number) {
       var img = new Image();
       img.onload = function () {
@@ -60,6 +59,7 @@ function App() {
           }, 500);
         }, 1000);
       }
+      return null
     });
   }, []);
 

@@ -7,10 +7,10 @@ import { CryptoProgressContainer } from "../../../styles";
 import { ICOtimer, Button } from "../../../components";
 
 function CryptoProgress(props) {
-  const [endTime, setEndTime] = useState(moment(1601596740000));
   const [icoCompleted, setIcoCompleted] = useState(false);
 
   useEffect(() => {
+    const endTime = moment(1601618400000)
     const calculateTime = () => {
       // difference of dates
       const diff = endTime.diff(moment());
