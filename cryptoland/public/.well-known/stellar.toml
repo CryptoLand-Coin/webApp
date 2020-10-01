@@ -5,17 +5,17 @@ NETWORK_PASSPHRASE="Public Global Stellar Network ; September 2015"
 ACCOUNTS=["GCBIJZQLTEVI6ZZYM4UH2LCUHNVNWUTZMQNOQTZWMOEAGDRWSWFDP2S3","GBP45GXX5B5FL43H3EEKMYJPXY3CZUQC6GIRYP2V2SKSRJMGZLJEX6WX"]
 
 [DOCUMENTATION]
-ORG_NAME="Cryptoland"
-ORG_DBA="Crypto Movez LLC"
+ORG_NAME="CryptoLand"
+ORG_DBA="CryptoLand LLC"
 ORG_URL="cryptoland.io"
 ORG_LOGO="https://cryptolandassets.s3.us-east-2.amazonaws.com/Cryptoland_LOGO.png"
-ORG_DESCRIPTION="Cryptoland"
-ORG_OFFICIAL_EMAIL="corey@cryptocorey.com"
+ORG_DESCRIPTION="CryptoLand"
+ORG_OFFICIAL_EMAIL="corey@cryptoland.io"
 
 [[PRINCIPALS]]
 name="Corey Chadwick"
-email="corey@cryptocorey.com"
-github="teamonepercent"
+email="corey@cryptoland.io"
+github="CryptoLand Coin"
 
 [[CURRENCIES]]
 code="CRYPTO"
@@ -24,5 +24,5 @@ display_decimals=2
 anchor_asset_type="crypto"
 anchor_asset="XLM"
 name="CRYPTOLAND"
-desc="Cryptoland"
+desc="CryptoLand"
 image="https://cryptolandassets.s3.us-east-2.amazonaws.com/Cryptoland_LOGO.png"
