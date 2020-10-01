@@ -21,7 +21,6 @@ import {
 } from "./components";
 
 function App() {
-  const [loadedImages, setLoadedImages] = useState(0);
   const [images, setImages] = useState([
     "Hero_BG.png",
     "foundation.png",
@@ -40,7 +39,7 @@ function App() {
     function PreloadImage(src, number) {
       var img = new Image();
       img.onload = function () {
-        setLoadedImages(number);
+        // console.log("image loaded")
       };
       img.src = src;
     }
