@@ -1,33 +1,32 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom'
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
 
 import {
   EmailSubscriber,
   HeroDescription,
-  CryptoProgress,
+  BuyCrypto,
   SectionOne,
   SectionTwo,
   SectionThree,
   SectionFour,
   SectionFive,
-} from '../../components'
+} from "../../components";
 
-import { LandingPageHero } from '../../styles'
+import { LandingPageHero } from "../../styles";
 
 class LandingPage extends Component {
-
   componentDidMount() {
-    window.scroll({ top: 0, behavior: 'smooth' })
+    window.scroll({ top: 0, behavior: "smooth" });
   }
 
   render() {
-    return(
+    return (
       <>
-        <LandingPageHero id='hero'>
-          <div className='hero-container'>
+        <LandingPageHero id="hero">
+          <div className="hero-container">
             <HeroDescription />
-            <CryptoProgress />
+            <BuyCrypto />
           </div>
         </LandingPageHero>
         <SectionOne />
@@ -37,12 +36,8 @@ class LandingPage extends Component {
         <SectionFive />
         <EmailSubscriber push={this.props.history.push} />
       </>
-    )
+    );
   }
-
 }
 
-export default connect(
-  null,
-  { }
-)(withRouter(LandingPage))
+export default connect(null, {})(withRouter(LandingPage));

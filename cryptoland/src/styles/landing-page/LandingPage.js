@@ -8,7 +8,6 @@ export const LandingPageHero = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 
-
   .hero-container {
     width: 100%;
     display: flex;
@@ -100,9 +99,7 @@ export const HeroDescriptionContainer = styled.div`
     }
 
     button {
-
       a {
-
         p {
           margin: 0;
         }
@@ -153,9 +150,9 @@ export const CryptoProgressContainer = styled.div`
       font-weight: 800;
       padding: 0 5%;
 
-     p {
-       font-size: 0.75em;
-       width: 29%;
+      p {
+        font-size: 0.75em;
+        width: 29%;
 
         @media (min-width: 1061px) and (max-width: 1300px) {
           width: 35%;
@@ -230,6 +227,62 @@ export const CryptoProgressContainer = styled.div`
 
       @media (max-width: 500px) {
         margin: 20% 0 2% 0;
+      }
+    }
+  }
+`;
+
+export const BuyCryptoContainer = styled.div`
+  width: 49.5%;
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media (max-width: 960px) {
+    width: 80%;
+    order: 1;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 500px) {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+    @media (max-width: 1280px) {
+      font-size: 1.9em;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 75px;
+
+    img {
+      height: 75px;
+
+      @media (max-width: 800px) {
+        width: ${() => `${window.innerWidth * 0.6}px`};
+        height: auto;
+      }
+    }
+
+    h4 {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 75px;
+      font-weight: 700;
+      text-rendering: optimizeLegibility;
+      color: #68c86f;
+
+      @media (max-width: 800px) {
+        font-size: ${() => `${window.innerWidth / 7.5}px`};
       }
     }
   }
