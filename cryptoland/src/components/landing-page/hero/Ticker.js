@@ -43,7 +43,7 @@ class Tick extends Component {
             <div id="ticker-info" className="ticker-item">
               <h1>CURRENT MARKET VALUE:</h1>
               <p>Cryptoland (CRYPTO) </p>
-              <h1>$82.73037 USD</h1>
+              <h1>$92.32716 USD</h1>
               {/* <i className="fas fa-sort-up " /> */}
               {/* <p>$37.80 (+38%)</p> */}
             </div>
