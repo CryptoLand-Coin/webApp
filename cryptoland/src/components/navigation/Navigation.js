@@ -90,7 +90,7 @@ class Navigation extends Component {
       "REWARDS",
       "APP",
       "FOUNDATION",
-      "LOGIN",
+      // "LOGIN",
     ];
 
     // Mapping out link items

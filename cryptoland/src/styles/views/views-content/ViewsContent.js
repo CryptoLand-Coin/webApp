@@ -1,9 +1,10 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const ViewsContentContainer = styled.div`
   height: auto;
-  padding-top: ${props => props.width > 1200 ? '140px' : '125px'};
-  padding-bottom: ${props => props.whitepaper ? '0px' : '100px'};
+  padding-top: ${(props) => (props.width > 1200 ? "140px" : "125px")};
+  padding-bottom: ${(props) => (props.whitepaper ? "0px" : "100px")};
+  background-color: white;
 
   .page-title {
     padding: 100px 0 0 5%;
@@ -33,5 +34,4 @@ export const ViewsContentContainer = styled.div`
   .paper-container {
     height: 100vh;
   }
-
-`
+`;
